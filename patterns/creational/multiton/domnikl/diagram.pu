@@ -1,0 +1,23 @@
+@startuml
+    Title <size:20>\nPattern: Multiton\n
+
+    class Multiton  {
+        INSTANCE_1
+        INSTANCE_2
+        - {static} instances: array
+        - __construct()
+        + {static} getInstance(): Multiton
+        - __clone()
+        - __wakeup()
+    }
+
+    note left of Multiton
+        The class is **final**.
+        To call: Multiton::getInstance()
+
+        **Prevent the instance:**
+        __construct(), to call from outside (multiple instances).
+        __clone(), from being cloned.
+        __wakeup() from being unserialized
+    end note
+@enduml

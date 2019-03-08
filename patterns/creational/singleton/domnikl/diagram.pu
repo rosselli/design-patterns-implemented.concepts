@@ -1,0 +1,21 @@
+@startuml
+    Title <size:20>\nPattern: Singleton\n
+
+    class Singleton  {
+        - {static} instance
+        - __construct()
+        + {static} getInstance(): Singleton
+        - __clone()
+        - __wakeup()
+    }
+
+    note left of Singleton
+        The class is **final**.
+        To call: Singleton::getInstance()
+
+        **Prevent the instance:**
+        __construct(), to call from outside (multiple instances).
+        __clone(), from being cloned.
+        __wakeup() from being unserialized
+    end note
+@enduml

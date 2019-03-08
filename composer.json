@@ -1,0 +1,15 @@
+{
+    "name": "rosselli/design-patterns-implementation",
+    "require": {
+        "phpunit/phpunit": "*"
+    },
+    "authors": [
+        {
+            "name": "Flavio Rosselli",
+            "email": "rosselli00@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["patterns"]
+    }
+}

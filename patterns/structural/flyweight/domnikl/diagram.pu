@@ -1,0 +1,25 @@
+@startuml
+    Title <size:20>\nPattern: Flyweight\n
+
+    interface FlyweightInterface {
+        + render(): string
+    }
+
+    interface Countable
+
+    class CharacterFlyweight {
+        - name: string
+        + __construct()
+        + render(): string
+    }
+
+    class FlyweightFactory {
+        - pool: array
+        + get(): CharacterFlyweight
+        + count(): int
+    }
+
+    CharacterFlyweight --> FlyweightFactory: " composition"
+    FlyweightInterface -left-> CharacterFlyweight: " implements"
+    Countable -left-> FlyweightFactory: " implements"
+@enduml

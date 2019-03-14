@@ -1,0 +1,21 @@
+@startuml
+    Title <size:20>\nPattern: Flyweight\n
+
+    class GreenTea
+
+    class TeaShop {
+        * orders
+        * teaMaker
+        + __construct()
+        + takeOrder()
+        + serve(): array
+    }
+
+    class TeaMaker {
+        * availableTea: array
+        + make()
+    }
+
+    GreenTea -right-> TeaMaker: " injects"
+    TeaMaker --> TeaShop: " injects"
+@enduml

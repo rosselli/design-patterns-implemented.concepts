@@ -1,0 +1,11 @@
+@startuml
+    Title <size:20>\nPattern: Registry\n
+
+    abstract Registry {
+        LOGGER
+        - {static} storedValues
+        - {static} allowedKeys
+        + {static} set()
+        + {static} get()
+    }
+@enduml

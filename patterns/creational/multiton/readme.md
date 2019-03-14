@@ -12,3 +12,6 @@
 
 ## Recipe
 + The same as Singleton but the house the instance is **static array**, not a regular variable.
+
+## Sources
++ [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Multiton)

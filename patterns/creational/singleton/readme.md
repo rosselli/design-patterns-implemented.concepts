@@ -23,3 +23,7 @@ handle all calls**.
 + Lock file for the application _(there is only one in the filesystem)_.
 
 ![](domnikl/diagram.png)
+
+## Sources
++ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-singleton)
++ [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Singleton)

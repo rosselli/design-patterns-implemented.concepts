@@ -1,3 +1,5 @@
 .idea
 vendor/
 patterns/toCopy/
+patterns/toCopy/_ToCopyTest.php
+tests/kamran-ahmed/_ToCopyTest.php

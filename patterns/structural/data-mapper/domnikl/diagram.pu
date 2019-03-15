@@ -1,0 +1,7 @@
+@startuml
+    Title <size:20>\nPattern: Dependency Injection\n
+
+StorageAdapter.php
+User.php
+UserMapper.php
+@enduml

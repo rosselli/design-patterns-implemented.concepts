@@ -1,0 +1,28 @@
+@startuml
+    Title <size:20>\nPattern: Dependency Injection\n
+
+    class DatabaseConfiguration {
+        - host
+        - port
+        - username
+        - password
+        + __construct(_
+        + getHost(): string
+        + getPort(): int
+        + getUsername(): string
+        + getPassword(): string
+    }
+
+    class DatabaseConnection {
+        - connection;
+        + __construct(_
+        + getDsn(): string
+    }
+
+    DatabaseConfiguration --> DatabaseConnection: " injects"
+@enduml
+
+
+
+
+

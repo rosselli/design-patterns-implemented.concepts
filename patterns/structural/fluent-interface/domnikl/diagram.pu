@@ -1,0 +1,18 @@
+@startuml
+    Title <size:20>\nPattern: Fluent Interface\n
+
+    class Sql {
+        - fields: array
+        - from: array
+        - where: array
+        + select(): Sql
+        + from(): string
+        + where(): string
+        + __toString(): string
+    }
+@enduml
+
+
+
+
+

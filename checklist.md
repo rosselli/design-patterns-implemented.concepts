@@ -1,9 +1,22 @@
 # Design Patterns: CheckLists
 
+| | Note | Recipe | Diagram | Code | Test
+--- | --- | --- | --- | --- | --- |
+**Behavioral:** NullObject |  |  |  |  | 
+**Behavioral:** Specification |  |  |  |  | 
+**Creational:** Multiton | done | done | done | done | done
+**Creational:** Pool |  |  |  |  | 
+**Creational:** Singleton | done | done | done | done | done
+**Structural:** DataMapper |  |  |  |  | 
+**Structural:** Dependency Injection |  |  |  |  | 
+**Structural:** Fluent Interface |  |  |  |  | 
+**Structural:** Flyweight  | done |  | done | done | done
+**Structural:** Proxy |  |  |  |  | 
+**Structural:** Registry | done |  | done | done | done
+
 ## Behavioral
 - [ ] Chain of Responsibility
 - [ ] Command
-- [ ] Interpreter
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento
@@ -35,9 +48,9 @@
 - [ ] Dependency Injection
 - [ ] Facade
 - [ ] Fluent Interface
-- [ ] Flyweight
+- [x] **_Flyweight_** _(2019.03.14)_
 - [ ] Proxy
-- [ ] Registry
+- [x] **_Registry_** _(2019.03.14)_
 
 ## More
 - [ ] Delegation

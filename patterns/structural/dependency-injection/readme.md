@@ -14,3 +14,8 @@
 ## Recipe
 + Create a Configuration class.
 + Create a instance of the Configuration class and inject it in a main class via constructor.
+
+![](domnikl/diagram.png)
+
+## Sources
++ [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/DependencyInjection)

@@ -9,7 +9,7 @@
 **Creational:** Singleton | done | done | done | done | done
 **Structural:** DataMapper | done | done | done | done | done 
 **Structural:** Dependency Injection | done | done | done | done | done 
-**Structural:** Fluent Interface |  |  |  |  | 
+**Structural:** Fluent Interface | done | done | done | done | done
 **Structural:** Flyweight | done |  | done | done | done
 **Structural:** Proxy |  |  |  |  | 
 **Structural:** Registry | done |  | done | done | done
@@ -47,7 +47,7 @@
 - [ ] Decorator
 - [x] **_Dependency Injection_**  _(2019.03.16)_
 - [ ] Facade
-- [ ] Fluent Interface
+- [x] **_Fluent Interface_** _(2019.03.16)_
 - [x] **_Flyweight_** _(2019.03.14)_
 - [ ] Proxy
 - [x] **_Registry_** _(2019.03.14)_

@@ -1,6 +1,7 @@
 <?php
 namespace Tests\Domnikl;
 
+use Patterns\Structural\FluentInterface\Domnikl\Sql;
 use PHPUnit\Framework\TestCase;
 
 class FluentInterfaceTest extends TestCase {

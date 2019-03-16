@@ -7,3 +7,7 @@
     + PHPUnit uses fluent interfaces to build mock objects
     + Yii Framework: CDbCommand and CActiveRecord use this pattern, too
 
+## Recipe
++ Create a class where the properties are arrays and every method return the object itself ($this).
++ At this point, the chaining is already implemented.
++ Implement the method __toString() and return the text, joining the elements of the arrays using sprintf().

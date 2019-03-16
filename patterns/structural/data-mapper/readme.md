@@ -1,28 +1,23 @@
 # Data Mapper
 
-  A Data Mapper, is a Data Access Layer that performs bidirectional
-  transfer of data between a persistent data store (often a relational
-  database) and an in memory data representation (the domain layer). The
-  goal of the pattern is to keep the in memory representation and the
-  persistent data store independent of each other and the data mapper
-  itself. The layer is composed of one or more mappers (or Data Access
-  Objects), performing the data transfer. Mapper implementations vary in
-  scope. Generic mappers will handle many different domain entity types,
-  dedicated mappers will handle one or a few.
-  
-  The key point of this pattern is, unlike Active Record pattern, the data
-  model follows Single Responsibility Principle.
-  
-  Examples
-  --------
-  
-  -  DB Object Relational Mapper (ORM) : Doctrine2 uses DAO named as
-     "EntityRepository"
-  
++ Is a Data Access Layer that **performs bidirectional transfer of data between a persistent data store** (often a relational database) **and an in memory data representation** (the domain layer). 
 
-![](kamran-ahmed/diagram.png)
++ The goal is to **keep the in memory representation and the persistent data store independent of each other and the data mapper (or Data Access Objects) itself**.
+   
+_Mapper implementations vary in scope. Generic mappers will handle many different domain entity types, dedicated mappers will handle one or a few._
+
+_The key point of this pattern is, unlike Active Record pattern, the data model follows Single Responsibility Principle._
+
+  
+## Examples
++ DB Object Relational Mapper (ORM) : Doctrine2 uses DAO named as "EntityRepository"
+
+## Recipe  
++ Create a Data class with fromState() a static method that return a instance of itself.
++ Create a Mapper that receive a Storage object in constructor.
++ The Mapper returns an object from Data class.
+
 ![](domnikl/diagram.png)
 
 ## Sources
-+ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans)
-+ [Domnikl](https://github.com/domnikl/DesignPatternsPHP)
++ [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/DataMapper)

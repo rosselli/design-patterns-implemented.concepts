@@ -6,17 +6,12 @@ class User {
     private $email;
 
     public function __construct(string $username, string $email) {
-        // validate parameters before setting them!
         $this->username = $username;
         $this->email = $email;
     }
 
     public static function fromState(array $state): User {
-        // validate state before accessing keys!
-        return new self(
-            $state['username'],
-            $state['email']
-        );
+        return new self($state['username'], $state['email']);
     }
 
     public function getUsername() {

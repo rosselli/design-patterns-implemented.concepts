@@ -1,7 +1,29 @@
 @startuml
-    Title <size:20>\nPattern: Dependency Injection\n
+    Title <size:20>\nPattern: Data Mapper\n
 
-StorageAdapter.php
-User.php
-UserMapper.php
+	class StorageAdapter {
+		- $data = []
+		+ __construct()
+		+ find()
+	}
+
+	class User {
+		- $username;
+		- $email;
+		+ __construct()
+		+ {static} fromState()
+		+ getUsername()
+		+ getEmail()
+	}
+
+	class UserMapper{
+		- $adapter;
+		+ __construct(StorageAdapter)
+		+ findById()
+		- mapRowToUser()
+	}
+
+	StorageAdapter --> UserMapper: " injects"
+	User --> UserMapper: " injects\nstatic"
+
 @enduml

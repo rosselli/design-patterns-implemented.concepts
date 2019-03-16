@@ -8,12 +8,6 @@ class UserMapper{
         $this->adapter = $storage;
     }
 
-    /**
-     * finds a user from storage based on ID and returns a User object located
-     * in memory. Normally this kind of logic will be implemented using the Repository pattern.
-     * However the important part is in mapRowToUser() below, that will create a business object from the
-     * data fetched from storage
-     */
     public function findById(int $id): User {
         $result = $this->adapter->find($id);
 

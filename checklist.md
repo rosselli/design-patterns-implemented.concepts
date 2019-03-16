@@ -7,10 +7,10 @@
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool | done | done | done | done | done 
 **Creational:** Singleton | done | done | done | done | done
-**Structural:** DataMapper |  |  |  |  | 
+**Structural:** DataMapper | done | done | done | done | done 
 **Structural:** Dependency Injection |  |  |  |  | 
 **Structural:** Fluent Interface |  |  |  |  | 
-**Structural:** Flyweight  | done |  | done | done | done
+**Structural:** Flyweight | done |  | done | done | done
 **Structural:** Proxy |  |  |  |  | 
 **Structural:** Registry | done |  | done | done | done
 
@@ -43,7 +43,7 @@
 - [ ] Adapter
 - [ ] Bridge
 - [ ] Composite
-- [ ] DataMapper
+- [x] **_DataMapper_** _(2019.03.16)_
 - [ ] Decorator
 - [ ] Dependency Injection
 - [ ] Facade

@@ -11,7 +11,6 @@
 
     +  Symfony and Zend Framework 2 already have containers for DI that create objects via a configuration array and inject them where needed (i.e. in Controllers)
 
-<!-- 
-
-
---> 
+## Recipe
++ Create a Configuration class.
++ Create a instance of the Configuration class and inject it in a main class via constructor.

@@ -8,7 +8,7 @@
 **Creational:** Pool | done | done | done | done | done 
 **Creational:** Singleton | done | done | done | done | done
 **Structural:** DataMapper | done | done | done | done | done 
-**Structural:** Dependency Injection |  |  |  |  | 
+**Structural:** Dependency Injection | done | done | done | done | done 
 **Structural:** Fluent Interface |  |  |  |  | 
 **Structural:** Flyweight | done |  | done | done | done
 **Structural:** Proxy |  |  |  |  | 
@@ -45,7 +45,7 @@
 - [ ] Composite
 - [x] **_DataMapper_** _(2019.03.16)_
 - [ ] Decorator
-- [ ] Dependency Injection
+- [x] **_Dependency Injection_**  _(2019.03.16)_
 - [ ] Facade
 - [ ] Fluent Interface
 - [x] **_Flyweight_** _(2019.03.14)_

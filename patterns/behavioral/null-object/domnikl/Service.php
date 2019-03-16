@@ -4,7 +4,7 @@ namespace Patterns\Behavioral\NullObject\Domnikl;
 class Service {
     private $logger;
 
-    public function __construct(LoggerInterface $logger) {
+    public function __construct(Logger $logger) {
         $this->logger = $logger;
     }
 

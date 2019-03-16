@@ -2,6 +2,6 @@
 namespace Patterns\Behavioral\NullObject\Domnikl;
 
 
-interface LoggerInterface {
+interface Logger {
     public function log(string $str);
 }

@@ -21,7 +21,7 @@
   
   
 ## Recipe  
-+ Create Interface and implement it in all loggers.
++ Create the Logger Interface and implement it in all loggers classes.
 + Create the Class NullLogger.
 + Inject the Interface in main Service
 + You don't have to check if the logger is set with is_null(), instead just use it.

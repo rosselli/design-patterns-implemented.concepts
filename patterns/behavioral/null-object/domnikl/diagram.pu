@@ -1,7 +1,7 @@
 @startuml
     Title <size:20>\nPattern: NullObject\n
 
-    interface LoggerInterface {
+    interface Logger {
 		+ log()
 	}
 
@@ -15,11 +15,11 @@
 
 	class Service {
 		- $logger
-		+ __construct(LoggerInterface $logger)
+		+ __construct(Logger $logger)
 		+ log()
 	}
 
-    NullLogger --> LoggerInterface: " implements"
-    PrintLogger --> LoggerInterface: " implements"
-    LoggerInterface --> Service: " injects"
+    NullLogger ..|> Logger: " implements"
+    PrintLogger ..|> Logger: " implements"
+    Logger --> Service: " injects"
 @enduml

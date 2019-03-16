@@ -1,7 +1,7 @@
 <?php
 namespace Patterns\Behavioral\NullObject\Domnikl;
 
-class NullLogger implements LoggerInterface{
+class NullLogger implements Logger{
     public function log(string $str){
         #
     }

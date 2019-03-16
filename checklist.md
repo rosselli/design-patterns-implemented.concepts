@@ -2,7 +2,7 @@
 
 | | Note | Recipe | Diagram | Code | Test
 --- | --- | --- | --- | --- | --- |
-**Behavioral:** NullObject |  |  |  |  | 
+**Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Specification |  |  |  |  | 
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool |  |  |  |  | 
@@ -20,7 +20,7 @@
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento
-- [ ] NullObject
+- [x] **_NullObject_** _(2019.03.16)_
 - [ ] Observer
 - [ ] Specification
 - [ ] State

@@ -8,7 +8,7 @@ Design patterns are **solutions to recurring problems**, guidelines on how to ta
 + "How to run a behavior in software component?"
 
 ### Patterns
-+ [D] [NullObject](patterns/behavioral/nullobject) _()_
++ [D] [NullObject](patterns/behavioral/nullobject) _(The Never Null)_
 + [D] [Specification](patterns/behavioral/specification) _()_
 
 ## Patterns: Creational (9)

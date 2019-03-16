@@ -1,3 +1,25 @@
 @startuml
+    Title <size:20>\nPattern: NullObject\n
 
+    interface LoggerInterface {
+		+ log()
+	}
+
+    class NullLogger {
+		+ log()
+	}
+
+    class PrintLogger {
+		+ log()
+    }
+
+	class Service {
+		- $logger
+		+ __construct(LoggerInterface $logger)
+		+ log()
+	}
+
+    NullLogger --> LoggerInterface: " implements"
+    PrintLogger --> LoggerInterface: " implements"
+    LoggerInterface --> Service: " injects"
 @enduml

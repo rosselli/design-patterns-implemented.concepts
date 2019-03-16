@@ -1,10 +1,10 @@
 <?php
 namespace Patterns\Behavioral\Specification\Domnikl;
 
-class OrSpecification implements SpecificationInterface {
+class OrSpecification implements Specification {
     private $specifications;
 
-    public function __construct(SpecificationInterface ...$specifications) {
+    public function __construct(Specification ...$specifications) {
         $this->specifications = $specifications;
     }
 

@@ -1,7 +1,7 @@
 <?php
 namespace Patterns\Behavioral\Specification\Domnikl;
 
-class PriceSpecification implements SpecificationInterface {
+class PriceSpecification implements Specification {
     private $maxPrice;
     private $minPrice;
 

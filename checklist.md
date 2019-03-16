@@ -1,9 +1,9 @@
 # Design Patterns: CheckLists
 
 | | Note | Recipe | Diagram | Code | Test
---- | --- | --- | --- | --- | --- |
+--- | :---:| :---:| :---: | :---:| :---:|
 **Behavioral:** NullObject | done | done | done | done | done
-**Behavioral:** Specification |  |  |  |  | 
+**Behavioral:** Specification | done | done | done | done | done 
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool |  |  |  |  | 
 **Creational:** Singleton | done | done | done | done | done
@@ -22,7 +22,7 @@
 - [ ] Memento
 - [x] **_NullObject_** _(2019.03.16)_
 - [ ] Observer
-- [ ] Specification
+- [x] **Specification** _(2019.03.16)_
 - [ ] State
 - [ ] Strategy
 - [ ] TemplateMethod

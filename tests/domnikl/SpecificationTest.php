@@ -1,6 +1,11 @@
 <?php
 namespace Tests\Domnikl;
 
+use Patterns\Behavioral\Specification\Domnikl\AndSpecification;
+use Patterns\Behavioral\Specification\Domnikl\Item;
+use Patterns\Behavioral\Specification\Domnikl\NotSpecification;
+use Patterns\Behavioral\Specification\Domnikl\OrSpecification;
+use Patterns\Behavioral\Specification\Domnikl\PriceSpecification;
 use PHPUnit\Framework\TestCase;
 
 class SpecificationTest extends TestCase {
@@ -21,9 +26,9 @@ class SpecificationTest extends TestCase {
 
         $andSpec = new AndSpecification($spec1, $spec2);
 
-        $this->assertFalse($andSpec->isSatisfiedBy(new Item(150)));
         $this->assertFalse($andSpec->isSatisfiedBy(new Item(1)));
         $this->assertFalse($andSpec->isSatisfiedBy(new Item(51)));
+        $this->assertFalse($andSpec->isSatisfiedBy(new Item(150)));
         $this->assertTrue($andSpec->isSatisfiedBy(new Item(100)));
     }
 

@@ -2,12 +2,12 @@
 namespace Patterns\Behavioral\Specification\Domnikl;
 
 use Patterns\Behavioral\Specification\Domnikl\Item;
-use Patterns\Behavioral\Specification\Domnikl\SpecificationInterface;
+use Patterns\Behavioral\Specification\Domnikl\Specification;
 
-class NotSpecification implements SpecificationInterface {
+class NotSpecification implements Specification {
     private $specification;
 
-    public function __construct(SpecificationInterface $specification) {
+    public function __construct(Specification $specification) {
         $this->specification = $specification;
     }
 

@@ -1,6 +1,6 @@
 <?php
 namespace Patterns\Behavioral\Specification\Domnikl;
 
-interface SpecificationInterface {
+interface Specification {
     public function isSatisfiedBy(Item $item): bool;
 }

@@ -1,3 +1,45 @@
 @startuml
+	Title <size:20>\nPattern: Specification\n
+
+
+	class Item {
+		- price
+		+ __construct()
+		+ getPrice()
+	}
+
+	interface Specification {
+		+ isSatisfiedBy(Item)
+	}
+
+	class AndSpecification {
+		- $specifications
+		+ __construct(Specification ...$specifications)
+		+ isSatisfiedBy(Item)
+	}
+
+	class OrSpecification {
+		- $specifications
+		+ __construct(Specification ...$specifications)
+		+ isSatisfiedBy(Item)
+	}
+
+	class NorSpecification {
+		- $specifications
+		+ __construct(Specification ...$specifications)
+		+ isSatisfiedBy(Item)
+	}
+
+	class PriceSpecification {
+		- $maxPrice
+		- $minPrice
+		+ __construct()
+		+ isSatisfiedBy(Item)
+	}
+
+	AndSpecification ..|> Specification: " implements \n and injects"
+	OrSpecification ..|> Specification: " implements \n and injects"
+	NorSpecification ..|> Specification: " implements \n and injects"
+	PriceSpecification ..|> Specification: " implements"
 
 @enduml

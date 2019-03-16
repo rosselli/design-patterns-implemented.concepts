@@ -1,19 +1,16 @@
 # Specification
 
-Builds a clear specification of business rules, where objects can be
-checked against. The composite specification class has one method called
-``isSatisfiedBy`` that returns either true or false depending on whether
-the given object satisfies the specification.
++ Builds a clear **specification of business rules, where objects can be checked against**. 
 
-Examples
---------
-
--  `RulerZ <https://github.com/K-Phoen/rulerz>`__ 
   
+## Recipe
++ Create the Specification Interface and implement it in all Specifications classes.
++ Create the Specifications classes And, Or, Nor and any other rules.
++ The Specification classes have one method **isSatisfiedBy()** that returns either true or false depending on whether
+  the given object satisfies the specification.
++ Create the Item class that will be injects in every isSatisfiedBy() method.
 
-![](kamran-ahmed/diagram.png)
 ![](domnikl/diagram.png)
 
 ## Sources
-+ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans)
-+ [Domnikl](https://github.com/domnikl/DesignPatternsPHP)
++ [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/Specification)

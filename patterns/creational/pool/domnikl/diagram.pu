@@ -1,3 +1,23 @@
 @startuml
+    Title <size:20>\nPattern: Pool\n
+
+	class WorkerPool {
+		- $occupiedWorkers = []
+		- $freeWorkers = []
+		+ get()
+		+ dispose(StringReverseWorker)
+		+ count()
+	}
+
+	class StringReverseWorker {
+		- $createdAt
+
+		+  __construct()
+		+ run()
+	}
+
+
+	WorkerPool .right.|> Countable: " implements"
+	StringReverseWorker --> WorkerPool: " injects"
 
 @enduml

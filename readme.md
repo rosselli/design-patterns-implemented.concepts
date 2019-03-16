@@ -16,7 +16,7 @@ Focused towards **how to instantiate an object** or group of related objects.
 
 ### Patterns
 + [D] [Multiton](patterns/creational/multiton) _(The Multiple Ones). Anti-pattern, use DI._
-+ [D] [Pool](patterns/creational/pool) _()_
++ [D] [Pool](patterns/creational/pool) _(The "On hold" Holder)_
 + [DK] [Singleton](patterns/creational/singleton) _(The President, The Only One). Anti-pattern, use DI._
 
 

@@ -5,7 +5,7 @@
 **Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Specification | done | done | done | done | done 
 **Creational:** Multiton | done | done | done | done | done
-**Creational:** Pool |  |  |  |  | 
+**Creational:** Pool | done | done | done | done | done 
 **Creational:** Singleton | done | done | done | done | done
 **Structural:** DataMapper |  |  |  |  | 
 **Structural:** Dependency Injection |  |  |  |  | 
@@ -33,7 +33,7 @@
 - [ ] Builder
 - [ ] Factory Method
 - [x] **_Multiton_** _(2019.03.08)_
-- [ ] Pool
+- [x] **_Pool_** _(2019.03.16)_
 - [ ] Prototype
 - [ ] SimpleFactory
 - [x] **_Singleton_** _(2019.03.08)_

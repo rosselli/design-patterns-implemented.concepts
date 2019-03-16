@@ -1,6 +1,7 @@
 <?php
 namespace Tests\Domnikl;
 
+use Patterns\Creational\Pool\Domnikl\WorkerPool;
 use PHPUnit\Framework\TestCase;
 
 class PoolTest extends TestCase {

@@ -1,15 +1,12 @@
 <?php
-namespace Patterns\Structural\Proxy\Domnikl;
+namespace Patterns\Structural\Registry\Domnikl;
 
 abstract class Registry {
     const LOGGER = 'logger';
 
-    /**
-     * this introduces global state in your application which can not be mocked up for testing
-     * and is therefor considered an anti-pattern! Use dependency injection instead!
-     */
-    private static $storedValues = [];
+    # this introduces global state in your application which can not be mocked up for testing
     private static $allowedKeys = [self::LOGGER,];
+    private static $storedValues = [];
 
     public static function set(string $key, $value) {
         if (!in_array($key, self::$allowedKeys)) {

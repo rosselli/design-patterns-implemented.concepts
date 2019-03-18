@@ -12,7 +12,7 @@
 **Structural:** Fluent Interface | done | done | done | done | done
 **Structural:** Flyweight | done |  | done | done | done
 **Structural:** Proxy |  |  |  |  | 
-**Structural:** Registry | done |  | done | done | done
+**Structural:** Registry | done | done | done | done | done
 
 ## Behavioral
 - [ ] Chain of Responsibility
@@ -50,7 +50,7 @@
 - [x] **_Fluent Interface_** _(2019.03.16)_
 - [x] **_Flyweight_** _(2019.03.14)_
 - [ ] Proxy
-- [x] **_Registry_** _(2019.03.14)_
+- [x] **_Registry_** _(2019.03.18)_
 
 ## More
 - [ ] Delegation

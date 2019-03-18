@@ -7,7 +7,8 @@
 + This introduces **global state, which should be avoided at all times**. Instead implement it using **Dependency Injection**.
 
 ## Recipe
-
++ Create an abstract class with 2 static properties (allowedKeys and storedValues).
++ Create 2 static methods (Set and Get) to manage the $storedValues properties. 
 
 
 ![](domnikl/diagram.png)

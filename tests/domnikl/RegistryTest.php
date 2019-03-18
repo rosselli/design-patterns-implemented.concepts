@@ -1,7 +1,7 @@
 <?php
 namespace Tests\Domnikl;
 
-use Patterns\Structural\Proxy\Domnikl\Registry;
+use Patterns\Structural\Registry\Domnikl\Registry;
 use stdClass;
 use PHPUnit\Framework\TestCase;
 

@@ -10,7 +10,7 @@
 **Structural:** DataMapper | done | done | done | done | done 
 **Structural:** Dependency Injection | done | done | done | done | done 
 **Structural:** Fluent Interface | done | done | done | done | done
-**Structural:** Flyweight | done |  | done | done | done
+**Structural:** Flyweight | done | done | done | done | done
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
@@ -48,7 +48,7 @@
 - [x] **_Dependency Injection_**  _(2019.03.16)_
 - [ ] Facade
 - [x] **_Fluent Interface_** _(2019.03.16)_
-- [x] **_Flyweight_** _(2019.03.14)_
+- [x] **_Flyweight_** _(2019.03.18)_
 - [x] **_Proxy_** _(2019.03.18)_
 - [x] **_Registry_** _(2019.03.18)_
 

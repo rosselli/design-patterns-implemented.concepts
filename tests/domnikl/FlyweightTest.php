@@ -1,7 +1,7 @@
 <?php
 namespace Tests\Domnikl;
 
-use DesignPatterns\Structural\Flyweight\FlyweightFactory;
+use Patterns\Structural\Flyweight\Domnikl\FlyweightFactory;
 use PHPUnit\Framework\TestCase;
 
 class FlyweightTest extends TestCase {

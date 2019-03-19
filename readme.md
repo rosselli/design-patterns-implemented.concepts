@@ -27,7 +27,7 @@ Concerned with object composition or **how the entities can use each other**.  "
 + [D] [DataMapper](patterns/structural/data-mapper) _(The Mapper)_
 + [D] [Dependency Injection](patterns/structural/dependency-injection) _(The Injector)_
 + [D] [Fluent Interface](patterns/structural/fluentinterface) _(The Chain Caller)_ 
-+ [DK] [Flyweight](patterns/structural/flyweight) _(The Object Sharer)_
++ [DK] [Flyweight](patterns/structural/flyweight) _(The Object Manager)_
 + [DK] [Proxy](patterns/structural/proxy) _(The Door Keeper)._
 + [D] [Registry](patterns/structural/registry) _(The Global State Logger). Anti-pattern, use DI._
 

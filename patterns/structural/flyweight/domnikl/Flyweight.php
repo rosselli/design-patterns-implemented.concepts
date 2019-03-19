@@ -1,6 +1,6 @@
 <?php
 namespace Patterns\Structural\Flyweight\Domnikl;
 
-interface FlyweightInterface {
+interface Flyweight {
     public function render(string $extrinsicState): string;
 }

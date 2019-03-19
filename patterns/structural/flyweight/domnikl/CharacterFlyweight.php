@@ -3,7 +3,7 @@ namespace Patterns\Structural\Flyweight\Domnikl;
 
 # Implements the flyweight interface and adds storage for intrinsic state (It does not depend on the circumstances).
 # Instances of concrete flyweights are shared by means of a factory.
-class CharacterFlyweight implements FlyweightInterface {
+class CharacterFlyweight implements Flyweight {
 
 	# Any state stored by the concrete flyweight must be independent of its context.
 	# For flyweights representing characters, this is usually the corresponding character code.

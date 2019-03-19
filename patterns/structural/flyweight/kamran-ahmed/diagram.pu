@@ -1,7 +1,12 @@
 @startuml
     Title <size:20>\nPattern: Flyweight\n
 
-    class GreenTea
+    class GreenTea {
+    	- type
+    	__construct(type)
+    	+ getType()
+
+    }
 
     class TeaShop {
         * orders
@@ -11,11 +16,12 @@
         + serve(): array
     }
 
-    class TeaMaker {
+    class TeaFactory {
         * availableTea: array
         + make()
+        + getAvailableTea()
     }
 
-    GreenTea -right-> TeaMaker: " injects"
-    TeaMaker --> TeaShop: " injects"
+    GreenTea -right-> TeaFactory: " injects"
+    TeaFactory --> TeaShop: " injects"
 @enduml

@@ -1,0 +1,24 @@
+@startuml
+    Title <size:20>\nPattern: Proxy\n
+
+    interface Door {
+        + open(): string
+        + close(): string
+    }
+
+    class LabDoor {
+        + open(): string
+        + close(): string
+    }
+
+    class SecuredDoor {
+    	* door
+    	+ __construct(Door)
+        + open(): string
+        + close(): string
+        + authenticate(): bool
+    }
+
+	LabDoor ..|> Door: " implements"
+	SecuredDoor <-right- LabDoor: " injects"
+@enduml

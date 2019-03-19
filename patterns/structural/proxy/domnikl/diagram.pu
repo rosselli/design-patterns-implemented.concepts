@@ -1,0 +1,31 @@
+@startuml
+    Title <size:20>\nPattern: Proxy\n
+
+    interface BankAccount {
+        + deposit()
+        + getBalance(): int
+    }
+
+    class HeavyBankAccount {
+        - transactions: array
+        + deposit()
+        + getBalance(): int
+    }
+
+    package Proxy <<Rectangle>> {
+        class BankAccountProxy {
+            - balance
+            __construct(BankAccount)
+            + getBalance()
+        }
+    }
+
+    BankAccountProxy <-- HeavyBankAccount: " injects"
+    BankAccountProxy ..|> BankAccount: " implements"
+    HeavyBankAccount ..|> BankAccount: " implements"
+@enduml
+
+
+
+
+

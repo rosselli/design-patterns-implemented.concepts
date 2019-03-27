@@ -17,7 +17,7 @@ Focused towards **how to instantiate an object** or group of related objects.
 
 ### Patterns
 + [D] [Multiton](patterns/creational/multiton) _(The Multiple Ones). Anti-pattern, use DI._
-+ [D] [Pool](patterns/creational/pool) _(The "On hold" Holder)_
++ [D] [Pool](patterns/creational/pool) _(The "On hold" Keeper)_
 + [DK] [Singleton](patterns/creational/singleton) _(The President, The Only One). Anti-pattern, use DI._
 
 
@@ -28,7 +28,7 @@ Concerned with object composition or **how the entities can use each other**.  "
 + [D] [DataMapper](patterns/structural/data-mapper) _(The Mapper)_
 + [D] [Dependency Injection](patterns/structural/dependency-injection) _(The Injector)_
 + [D] [Fluent Interface](patterns/structural/fluentinterface) _(The Chain Caller)_ 
-+ [DK] [Flyweight](patterns/structural/flyweight) _(The Object Manager)_
++ [DK] [Flyweight](patterns/structural/flyweight) _(The Object Sharer)_
 + [DK] [Proxy](patterns/structural/proxy) _(The Door Keeper)._
 + [D] [Registry](patterns/structural/registry) _(The Global State Logger). Anti-pattern, use DI._
 

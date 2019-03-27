@@ -3,6 +3,7 @@
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
 **Behavioral:** NullObject | done | done | done | done | done
+**Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool | done | done | done | done | done 
@@ -21,7 +22,7 @@
 - [ ] Mediator
 - [ ] Memento
 - [x] **_NullObject_** _(2019.03.16)_
-- [ ] Observer
+- [x] **_Observer_** _(2019.03.24)_
 - [x] **Specification** _(2019.03.16)_
 - [ ] State
 - [ ] Strategy

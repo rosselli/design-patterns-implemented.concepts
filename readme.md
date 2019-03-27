@@ -9,6 +9,7 @@ Design patterns are **solutions to recurring problems**, guidelines on how to ta
 
 ### Patterns
 + [D] [NullObject](patterns/behavioral/nullobject) _(The Never Null)_
++ [DK] [Observer](patterns/behavioral/observer) _(The Notifier)_
 + [D] [Specification](patterns/behavioral/specification) _(The AndOrNor)_
 
 ## Patterns: Creational (9)

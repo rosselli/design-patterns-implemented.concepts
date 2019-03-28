@@ -1,0 +1,40 @@
+@startuml
+    Title <size:20>\nPattern: Command\n
+
+    interface Command {
+        + execute();
+        + undo();
+        + redo();
+    }
+
+    class Bulb {
+        + turnOn()
+        + turnOff()
+    }
+
+    class TurnOn {
+        protected $bulb;
+        + __construct(Bulb)
+        + execute()
+        + undo()
+        + redo()
+    }
+
+    class TurnOff {
+        protected $bulb;
+        + __construct(Bulb)
+        + execute()
+        + undo()
+        + redo()
+    }
+
+    class RemoteControl {
+        + submit(Command)
+    }
+
+    TurnOn ..|> Command: " implements"
+    TurnOff ..|> Command: " implements"
+    Bulb --> TurnOn: " injects"
+    Bulb --> TurnOff: " injects"
+    Command --> RemoteControl: " injects"
+@enduml

@@ -8,6 +8,7 @@ Design patterns are **solutions to recurring problems**, guidelines on how to ta
 + "How to run a behavior in software component?"
 
 ### Patterns
++ [DK] [Command](patterns/behavioral/command) _(The Waitress)_
 + [D] [NullObject](patterns/behavioral/nullobject) _(The Never Null)_
 + [DK] [Observer](patterns/behavioral/observer) _(The Notifier)_
 + [D] [Specification](patterns/behavioral/specification) _(The AndOrNor)_

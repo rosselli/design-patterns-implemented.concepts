@@ -2,6 +2,7 @@
 
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
+**Behavioral:** Command | done | done | done | done | done
 **Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
@@ -17,7 +18,7 @@
 
 ## Behavioral
 - [ ] Chain of Responsibility
-- [ ] Command
+- [x] **_Command_** _(2019.03.28)_
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento

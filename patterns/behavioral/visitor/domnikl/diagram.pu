@@ -1,0 +1,40 @@
+@startuml
+	Title <size:20>\nPattern: Visitor\n
+
+    interface Role {
+        + accept(RoleVisitorInterface);
+    }
+
+    interface RoleVisitorInterface {
+        + visitUser(User);
+        + visitGroup(Group);
+    }
+
+    class Group {
+        - name
+        + __construct()
+        + getName(): string
+        + accept(RoleVisitorInterface)
+    }
+
+    class User {
+        - name
+        + __construct()
+        + getName(): string
+        + accept(RoleVisitorInterface)
+    }
+
+    class RoleVisitor {
+        - visited: array
+        + visitGroup(Group)
+        + visitUser(User)
+        + getVisited(): array
+    }
+
+    Group ..|> Role: " implements"
+    User ..|> Role: " implements"
+    RoleVisitor ..|> RoleVisitorInterface: " implements"
+    RoleVisitorInterface --> Group: " injects"
+    RoleVisitorInterface --> User: " injects"
+
+@enduml

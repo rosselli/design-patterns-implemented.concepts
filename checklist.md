@@ -6,6 +6,7 @@
 **Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
+**Behavioral:** Visitor | done | done | done | done | done 
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool | done | done | done | done | done 
 **Creational:** Singleton | done | done | done | done | done
@@ -28,7 +29,7 @@
 - [ ] State
 - [ ] Strategy
 - [ ] TemplateMethod
-- [ ] Visitor
+- [x] **_Visitor_** _(2019.03.29)_
 
 ## Creational
 - [ ] Abstract Factory

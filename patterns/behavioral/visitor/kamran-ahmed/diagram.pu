@@ -1,0 +1,48 @@
+@startuml
+	Title <size:20>\nPattern: Visitor\n
+
+    interface Animal {
+        + accept(AnimalOperation)
+    }
+
+    interface AnimalOperation {
+        + visitMonkey(Monkey)
+        + visitLion(Lion)
+        + visitDolphin(Dolphin)
+    }
+
+    class Dolphin {
+        + speak()
+        + accept(AnimalOperation)
+    }
+
+    class Lion {
+        + roar()
+        + accept(AnimalOperation)
+    }
+
+    class Monkey {
+        + shout()
+        + accept(AnimalOperation)
+    }
+
+    class Jump {
+        + visitMonkey(Monkey)
+        + visitLion(Lion)
+        + visitDolphin(Dolphin)
+    }
+
+    class Speak {
+        + visitMonkey(Monkey)
+        + visitLion(Lion)
+        + visitDolphin(Dolphin)
+    }
+
+
+    Dolphin ..|> Animal: " implements"
+    Lion ..|> Animal: " implements"
+    Monkey ..|> Animal: " implements"
+    Jump ..|> AnimalOperation: " implements"
+    Speak ..|> AnimalOperation: " implements"
+    AnimalOperation --> Animal: " injects"
+@enduml

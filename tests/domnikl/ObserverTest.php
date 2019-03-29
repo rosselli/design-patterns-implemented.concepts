@@ -15,7 +15,6 @@ class ObserverTest extends TestCase {
         $user->changeEmail('foo@bar.com');
         $this->assertCount(1, $observer->getChangedUsers());
         $user->changeEmail('bar@bar.com');
-        var_dump($observer->getChangedUsers());
         $this->assertCount(2, $observer->getChangedUsers());
         $user->changeEmail('green@bar.com');
         $user->changeEmail('red@bar.com');

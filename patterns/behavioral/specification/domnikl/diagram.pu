@@ -12,34 +12,32 @@
 		+ isSatisfiedBy(Item)
 	}
 
-	class AndSpecification {
+	class AndSpecification implements Specification {
 		- $specifications
 		+ __construct(Specification ...$specifications)
 		+ isSatisfiedBy(Item)
 	}
 
-	class OrSpecification {
+	class OrSpecification implements Specification {
 		- $specifications
 		+ __construct(Specification ...$specifications)
 		+ isSatisfiedBy(Item)
 	}
 
-	class NorSpecification {
+	class NorSpecification implements Specification {
 		- $specifications
 		+ __construct(Specification ...$specifications)
 		+ isSatisfiedBy(Item)
 	}
 
-	class PriceSpecification {
+	class PriceSpecification implements Specification {
 		- $maxPrice
 		- $minPrice
 		+ __construct()
 		+ isSatisfiedBy(Item)
 	}
 
-	AndSpecification ..|> Specification: " implements \n and injects"
-	OrSpecification ..|> Specification: " implements \n and injects"
-	NorSpecification ..|> Specification: " implements \n and injects"
-	PriceSpecification ..|> Specification: " implements"
-
+	Specification --> AndSpecification: " injects"
+	Specification --> OrSpecification: " injects"
+	Specification --> NorSpecification: " injects"
 @enduml

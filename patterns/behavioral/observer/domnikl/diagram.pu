@@ -1,26 +1,22 @@
 @startuml
 	Title <size:20>\nPattern: Observer\n
 
-	class User {
+	class User implements SplSubject {
 		- email
 		- observers
-		+ __construct()
-		+ attach(\SplObserver)
+		+ __construct(SplObjectStorage)
+		+ attach(SplObserver)
 		+ detach(SplObserver)
 		+ changeEmail()
 		+ notify()
 	}
 
-	class UserObserver {
+	class UserObserver implements SplObserver {
 		- changedUsers: array
 		+ update(SplSubject)
 		+ getChangedUsers(): array
 	}
 
-	UserObserver ..|> SplObserver: " implements"
-	SplSubject -left-> UserObserver: " injects"
-
-	User ..|> SplSubject: " implements"
+	User -left-> UserObserver: " injects"
 	SplObjectStorage -left-> User: " injects"
-
 @enduml

@@ -12,7 +12,7 @@
         + turnOff()
     }
 
-    class TurnOn {
+    class TurnOn implements Command {
         protected $bulb;
         + __construct(Bulb)
         + execute()
@@ -20,7 +20,7 @@
         + redo()
     }
 
-    class TurnOff {
+    class TurnOff implements Command {
         protected $bulb;
         + __construct(Bulb)
         + execute()
@@ -32,9 +32,7 @@
         + submit(Command)
     }
 
-    TurnOn ..|> Command: " implements"
-    TurnOff ..|> Command: " implements"
-    Bulb --> TurnOn: " injects"
-    Bulb --> TurnOff: " injects"
-    Command --> RemoteControl: " injects"
+    Bulb -left-> TurnOn: " injects"
+    Bulb -right-> TurnOff: " injects"
+    Command -left-> RemoteControl: " injects"
 @enduml

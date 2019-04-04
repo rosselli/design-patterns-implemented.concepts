@@ -11,38 +11,32 @@
         + visitDolphin(Dolphin)
     }
 
-    class Dolphin {
+    class Dolphin implements Animal {
         + speak()
         + accept(AnimalOperation)
     }
 
-    class Lion {
+    class Lion implements Animal {
         + roar()
         + accept(AnimalOperation)
     }
 
-    class Monkey {
+    class Monkey implements Animal {
         + shout()
         + accept(AnimalOperation)
     }
 
-    class Jump {
+    class Jump implements AnimalOperation {
         + visitMonkey(Monkey)
         + visitLion(Lion)
         + visitDolphin(Dolphin)
     }
 
-    class Speak {
+    class Speak implements AnimalOperation {
         + visitMonkey(Monkey)
         + visitLion(Lion)
         + visitDolphin(Dolphin)
     }
 
-
-    Dolphin ..|> Animal: " implements"
-    Lion ..|> Animal: " implements"
-    Monkey ..|> Animal: " implements"
-    Jump ..|> AnimalOperation: " implements"
-    Speak ..|> AnimalOperation: " implements"
-    AnimalOperation --> Animal: " injects"
+    AnimalOperation -left-> Animal: " injects"
 @enduml

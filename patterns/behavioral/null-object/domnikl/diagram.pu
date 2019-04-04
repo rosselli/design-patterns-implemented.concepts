@@ -5,11 +5,11 @@
 		+ log()
 	}
 
-    class NullLogger {
+    class NullLogger implements Logger {
 		+ log()
 	}
 
-    class PrintLogger {
+    class PrintLogger implements Logger {
 		+ log()
     }
 
@@ -19,7 +19,5 @@
 		+ log()
 	}
 
-    NullLogger ..|> Logger: " implements"
-    PrintLogger ..|> Logger: " implements"
-    Logger --> Service: " injects"
+    Logger -left-> Service: " injects"
 @enduml

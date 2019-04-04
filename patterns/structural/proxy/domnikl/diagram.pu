@@ -6,14 +6,14 @@
         + getBalance(): int
     }
 
-    class HeavyBankAccount {
+    class HeavyBankAccount implements BankAccount {
         - transactions: array
         + deposit()
         + getBalance(): int
     }
 
     package Proxy <<Rectangle>> {
-        class BankAccountProxy {
+        class BankAccountProxy implements BankAccount {
             - balance
             __construct(BankAccount)
             + getBalance()
@@ -21,8 +21,6 @@
     }
 
     BankAccountProxy <-- HeavyBankAccount: " injects"
-    BankAccountProxy ..|> BankAccount: " implements"
-    HeavyBankAccount ..|> BankAccount: " implements"
 @enduml
 
 

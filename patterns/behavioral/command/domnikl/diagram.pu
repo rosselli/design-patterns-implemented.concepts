@@ -1,8 +1,7 @@
 @startuml
     Title <size:20>\nPattern: Command\n
 
-
-    interface UndoableCommand {
+    interface UndoableCommand extends Command {
         + undo()
     }
 
@@ -10,13 +9,13 @@
         + execute()
     }
 
-    class HelloCommand {
+    class HelloCommand implements Command {
         - output
         + __construct(Receiver)
         + execute()
     }
 
-    class AddMessageDateCommand {
+    class AddMessageDateCommand implements UndoableCommand {
         - output
         + __construct(Receiver)
         + execute()
@@ -38,11 +37,7 @@
         + disableDate()
     }
 
-    UndoableCommand ..> Command: " extends"
-    AddMessageDateCommand -left-|> UndoableCommand: " implements"
-    HelloCommand --|> Command: " implements"
     Command --> Invoker: " injects"
-    Receiver --> HelloCommand: " injects"
+    Receiver -left-> HelloCommand: " injects"
     Receiver --> AddMessageDateCommand: " injects"
-
 @enduml

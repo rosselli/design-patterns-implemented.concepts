@@ -10,31 +10,27 @@
         + visitGroup(Group);
     }
 
-    class Group {
+    class Group implements Role {
         - name
         + __construct()
         + getName(): string
         + accept(RoleVisitorInterface)
     }
 
-    class User {
+    class User implements Role {
         - name
         + __construct()
         + getName(): string
         + accept(RoleVisitorInterface)
     }
 
-    class RoleVisitor {
+    class RoleVisitor implements RoleVisitorInterface{
         - visited: array
         + visitGroup(Group)
         + visitUser(User)
         + getVisited(): array
     }
 
-    Group ..|> Role: " implements"
-    User ..|> Role: " implements"
-    RoleVisitor ..|> RoleVisitorInterface: " implements"
-    RoleVisitorInterface --> Group: " injects"
-    RoleVisitorInterface --> User: " injects"
-
+    RoleVisitorInterface -left-> Group: " injects"
+    RoleVisitorInterface -right-> User: " injects"
 @enduml

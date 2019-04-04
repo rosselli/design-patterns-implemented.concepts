@@ -8,20 +8,20 @@
 
     }
 
+    class TeaFactory {
+        * availableTea: array
+        + make(): GreenTea
+        + getAvailableTea()
+    }
+
     class TeaShop {
         * orders
         * teaMaker
-        + __construct()
+        + __construct(TeaFactory)
         + takeOrder()
         + serve(): array
     }
 
-    class TeaFactory {
-        * availableTea: array
-        + make()
-        + getAvailableTea()
-    }
-
-    GreenTea -right-> TeaFactory: " injects"
+    GreenTea --> TeaFactory: " injects"
     TeaFactory --> TeaShop: " injects"
 @enduml

@@ -5,21 +5,17 @@
         + render(): string
     }
 
-    interface Countable
-
-    class CharacterFlyweight {
+    class CharacterFlyweight implements Flyweight {
         - name: string
         + __construct()
         + render(): string
     }
 
-    class FlyweightFactory {
+    class FlyweightFactory implements Countable {
         - pool: array
         + get(): CharacterFlyweight
         + count(): int
     }
 
-    CharacterFlyweight --> FlyweightFactory: " injects"
-    CharacterFlyweight .left.|> Flyweight: " implements"
-    FlyweightFactory .left.|> Countable: " implements"
+    CharacterFlyweight -left-> FlyweightFactory: " injects"
 @enduml

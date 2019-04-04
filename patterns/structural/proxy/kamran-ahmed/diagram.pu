@@ -6,7 +6,7 @@
         + close(): string
     }
 
-    class LabDoor {
+    class LabDoor implements Door {
         + open(): string
         + close(): string
     }
@@ -19,6 +19,5 @@
         + authenticate(): bool
     }
 
-	LabDoor ..|> Door: " implements"
-	SecuredDoor <-right- LabDoor: " injects"
+	LabDoor -right-> SecuredDoor: " injects"
 @enduml

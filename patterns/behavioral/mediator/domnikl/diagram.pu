@@ -1,0 +1,24 @@
+@startuml
+    Title <size:20>\nPattern: Mediator\n
+
+    interface MediatorInterface {
+        + sendResponse($content);
+        + makeRequest();
+        + queryDb();
+    }
+
+    abstract class Colleague {
+        * $mediator;
+        + setMediator(MediatorInterface)
+    }
+
+    class Mediator implements MediatorInterface {
+        - server
+        - database
+        - client
+        + __construct(Database, Client, Server)
+        + makeRequest()
+        + queryDb()
+        + sendResponse()
+    }
+@enduml

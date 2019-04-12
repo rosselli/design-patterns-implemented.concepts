@@ -1,0 +1,21 @@
+@startuml
+    Title <size:20>\nPattern: Mediator\n
+
+    interface ChatRoomMediator{
+        + showMessage(User, string);
+    }
+
+    class ChatRoom implements ChatRoomMediator {
+        + showMessage(User)
+    }
+
+    class User {
+        * name;
+        * chatMediator;
+        + __construct(ChatRoomMediator)
+        + getName()
+        + send()
+    }
+
+
+@enduml

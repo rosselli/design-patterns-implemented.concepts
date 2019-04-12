@@ -3,6 +3,7 @@
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
 **Behavioral:** Command | done | done | done | done | done
+**Behavioral:** Mediator | done | done | done | done | done
 **Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
@@ -17,7 +18,7 @@
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
-## Behavioral
+## Behavioral (5/11)
 - [ ] Chain of Responsibility
 - [x] **_Command_** _(2019.03.28)_
 - [ ] Iterator
@@ -31,7 +32,7 @@
 - [ ] TemplateMethod
 - [x] **_Visitor_** _(2019.03.29)_
 
-## Creational
+## Creational (3/9)
 - [ ] Abstract Factory
 - [ ] Builder
 - [ ] Factory Method
@@ -42,7 +43,7 @@
 - [x] **_Singleton_** _(2019.03.08)_
 - [ ] StaticFactory
 
-## Structural
+## Structural (6/11)
 - [ ] Adapter
 - [ ] Bridge
 - [ ] Composite

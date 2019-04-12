@@ -1,6 +1,6 @@
 # Specification
 
-+ Builds a clear **specification of business rules, where objects can be checked against**. 
++ It builds a clear **specification of business rules, where objects can be checked against**. 
 
   
 ## Recipe

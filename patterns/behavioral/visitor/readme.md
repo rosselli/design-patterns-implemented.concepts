@@ -1,7 +1,7 @@
 # Visitor
 
++ It **adds further operations to objects without having to modify them**.
 + To **outsource operations on objects to other objects**. The main reason to do this is to keep a **separation of concerns**.
-+ Visitor pattern lets you add further operations to objects without having to modify them.
 + The classes have to define a **contract to allow visitors** (**Role::accept()**).
 + Each Visitor has to **choose itself which method to invoke on the visitor**.  
 + The visitor design pattern is a **way of separating an algorithm from an object structure on which it operates**. 

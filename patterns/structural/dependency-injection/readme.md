@@ -1,5 +1,7 @@
 # Dependency Injection
 
++ It **injects an object inside another object** _(normally via constructor)_, reducing the coupling and the need to extend it.
+
 + To implement a **loosely coupled architecture** in order to get better testable, maintainable and extendable code.
 
 + _(DatabaseConfiguration gets injected and DatabaseConnection will get all that it needs from $config)_, **without DI, the configuration would be created directly in DatabaseConnection, which is not very good for testing and extending it**.

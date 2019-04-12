@@ -1,6 +1,6 @@
 # Singleton
 
-+ To have **only one instance of this object in the application that will
++ It has **only one instance of this object in the application that will
 handle all calls**.
 
 + _There can only be **one president of a country at a time**.  The same president has to be brought to action, whenever duty calls. President here is singleton. In other words, ensures that only one object of a particular class is ever created._

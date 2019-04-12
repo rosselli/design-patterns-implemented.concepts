@@ -1,8 +1,8 @@
 # Null Object
  
++ It returns objects that won't never be null, eliminating the conditional is_null() check.
 + NullObject **is not a GoF design pattern** but a schema which appears
  frequently enough to be considered a pattern. 
-+ Methods that return an object or null should instead **return an object or NullObject**.
 + NullObject simplify boilerplate code such as **if (!is_null($obj)) { $obj->callSomething(); }** to just **$obj->callSomething();** by eliminating the conditional check in client code.
 
 

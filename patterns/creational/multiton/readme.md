@@ -1,6 +1,6 @@
 # Multiton
 
-+ To have only a list of named instances that are used, **like a singleton but with N instances**.
++ It has a list of named instances that are used, **like a singleton but with N instances**.
 
 + _This is **considered to be an anti-pattern**. For better testability and maintainability **use dependency injection**_.
 

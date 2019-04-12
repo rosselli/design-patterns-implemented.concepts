@@ -1,6 +1,6 @@
 # Flyweight 
 
-+ To minimise memory usage (or computational expenses), a **Flyweight shares as much as possible memory with similar objects**. 
++ It **shares similar objects as much as possible to minimise memory usage**. 
 
 + It is needed **when a large amount of objects is used that don't differ much in state**.
 

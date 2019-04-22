@@ -1,0 +1,30 @@
+@startuml
+	Title <size:20>\nPattern: Observer\n
+
+    class JobPost {
+		- title
+		+ __construct()
+		+ getTitle()
+    }
+
+	class JobSeeker {
+		- $name;
+		+ __construct()
+		+ onJobPosted(JobPost)
+	}
+
+	class EmploymentAgency {
+		- $observers = [];
+		+ attach(Observer)
+		+ detach(Observer)
+		+ notify(JobPost)
+		+ addJob(JobPost)
+	}
+
+    JobSeeker ..|> Observer: " implements"
+    JobPost -left-> JobSeeker: " injects"
+    EmploymentAgency ..|> Observable: " implements"
+    JobPost -left-> EmploymentAgency: " injects"
+    Observer -left-> EmploymentAgency: " injects"
+
+@enduml

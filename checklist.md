@@ -56,7 +56,7 @@
 - [x] **_Proxy_** _(2019.03.18)_
 - [x] **_Registry_** _(2019.03.18)_
 
-## More
+## More (3)
 - [ ] Delegation
 - [ ] Service Locator
 - [ ] Repository

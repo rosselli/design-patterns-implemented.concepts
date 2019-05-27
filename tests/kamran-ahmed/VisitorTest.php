@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase {
 
-	public function SetUp() {
+	public function setUp(): void {
 		$this->dolphin = new Dolphin();
 		$this->lion = new Lion();
 		$this->monkey = new Monkey();

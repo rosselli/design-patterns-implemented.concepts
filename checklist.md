@@ -19,48 +19,48 @@
 **Structural:** Registry | done | done | done | done | done
 
 ## Behavioral (5/11)
-- [ ] Chain of Responsibility
-- [x] **_Command_** _(2019.03.28)_
-- [ ] Iterator
-- [ ] Mediator
-- [ ] Memento
-- [x] **_NullObject_** _(2019.03.16)_
-- [x] **_Observer_** _(2019.03.24)_
-- [x] **Specification** _(2019.03.16)_
-- [ ] State
-- [ ] Strategy
-- [ ] TemplateMethod
-- [x] **_Visitor_** _(2019.03.29)_
+-[ ] Chain of Responsibility
+-[ ] **_Command_** 
+-[ ] Iterator
+-[ ] Mediator
+-[ ] Memento
+-[x] **_NullObject_** _(2019.05.25)_ 
+-[ ] **_Observer_** 
+-[x] **Specification** _(2019.05.25)_  
+-[ ] State
+-[ ] Strategy
+-[ ] TemplateMethod
+-[ ] **_Visitor_** 
 
 ## Creational (3/9)
-- [ ] Abstract Factory
-- [ ] Builder
-- [ ] Factory Method
-- [x] **_Multiton_** _(2019.03.08)_
-- [x] **_Pool_** _(2019.03.16)_
-- [ ] Prototype
-- [ ] SimpleFactory
-- [x] **_Singleton_** _(2019.03.08)_
-- [ ] StaticFactory
+-[ ] Abstract Factory
+-[ ] Builder
+-[ ] Factory Method
+-[x] **_Multiton_** _(2019.05.25)_ 
+-[ ] **_Pool_** 
+-[ ] Prototype
+-[ ] SimpleFactory
+-[x] **_Singleton_** _(2019.05.25)_  
+-[ ] StaticFactory
 
 ## Structural (6/11)
-- [ ] Adapter
-- [ ] Bridge
-- [ ] Composite
-- [x] **_DataMapper_** _(2019.03.16)_
-- [ ] Decorator
-- [x] **_Dependency Injection_**  _(2019.03.16)_
-- [ ] Facade
-- [x] **_Fluent Interface_** _(2019.03.16)_
-- [x] **_Flyweight_** _(2019.03.18)_
-- [x] **_Proxy_** _(2019.03.18)_
-- [x] **_Registry_** _(2019.03.18)_
+-[ ] Adapter
+-[ ] Bridge
+-[ ] Composite
+-[x] **_DataMapper_** _(2019.05.27)_ 
+-[ ] Decorator
+-[x] **_Dependency Injection_** _(2019.05.25)_ 
+-[ ] Facade
+-[x] **_Fluent Interface_** _(2019.05.25)_  
+-[ ] **_Flyweight_** 
+-[ ] **_Proxy_** 
+-[x] **_Registry_** _(2019.05.27)_ 
 
 ## More (3)
-- [ ] Delegation
-- [ ] Service Locator
-- [ ] Repository
-- [ ] Entity-Attribute-Value (EAV)
+-[ ] Delegation
+-[ ] Service Locator
+-[ ] Repository
+-[ ] Entity-Attribute-Value (EAV)
 
 
 

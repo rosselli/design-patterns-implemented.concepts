@@ -14,10 +14,8 @@ class DataMapperTest extends TestCase {
         $this->assertInstanceOf(User::class, $user);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testWillNotMapInvalidData() {
+		$this->expectException(\InvalidArgumentException::class);
         $storage = new StorageAdapter([]);
         $mapper = new UserMapper($storage);
         $mapper->findById(1);

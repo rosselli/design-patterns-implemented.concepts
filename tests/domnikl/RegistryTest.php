@@ -17,10 +17,8 @@ class RegistryTest extends TestCase {
         $this->assertInstanceOf(stdClass::class, $storedLogger);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testThrowsExceptionWhenTryingToSetInvalidKey() {
+		$this->expectException(\InvalidArgumentException::class);
         Registry::set('foobar', new stdClass());
     }
 
@@ -30,9 +28,9 @@ class RegistryTest extends TestCase {
      * injected class may easily be replaced by a mockup
      *
      * @runInSeparateProcess
-     * @expectedException \InvalidArgumentException
      */
     public function testThrowsExceptionWhenTryingToGetNotSetKey() {
+		$this->expectException(\InvalidArgumentException::class);
         Registry::get(Registry::LOGGER);
     }
 }

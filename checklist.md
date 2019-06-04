@@ -19,6 +19,7 @@
 **Structural:** Registry | done | done | done | done | done
 
 ## Behavioral (3/11)
+
 -[ ] Chain of Responsibility
 -[ ] **_Command_** 
 -[ ] Iterator
@@ -33,6 +34,7 @@
 -[x] **_Visitor_** _(2019.06.04)_ 
 
 ## Creational (2/9)
+
 -[ ] Abstract Factory
 -[ ] Builder
 -[ ] Factory Method
@@ -44,6 +46,7 @@
 -[ ] StaticFactory
 
 ## Structural (4/11)
+
 -[ ] Adapter
 -[ ] Bridge
 -[ ] Composite
@@ -57,6 +60,7 @@
 -[x] **_Registry_** _(2019.05.27)_ 
 
 ## More (3)
+
 -[ ] Delegation
 -[ ] Service Locator
 -[ ] Repository

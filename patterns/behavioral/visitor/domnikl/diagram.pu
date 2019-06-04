@@ -6,8 +6,8 @@
     }
 
     interface RoleVisitorInterface {
-        + visitUser(User);
-        + visitGroup(Group);
+        + visitUser(User): void ;
+        + visitGroup(Group): void ;
     }
 
     class Group implements Role {
@@ -26,8 +26,8 @@
 
     class RoleVisitor implements RoleVisitorInterface{
         - visited: array
-        + visitGroup(Group)
-        + visitUser(User)
+        + visitGroup(Group): void
+        + visitUser(User): void
         + getVisited(): array
     }
 

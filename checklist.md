@@ -18,7 +18,7 @@
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
-## Behavioral (5/11)
+## Behavioral (3/11)
 -[ ] Chain of Responsibility
 -[ ] **_Command_** 
 -[ ] Iterator
@@ -30,9 +30,9 @@
 -[ ] State
 -[ ] Strategy
 -[ ] TemplateMethod
--[ ] **_Visitor_** 
+-[x] **_Visitor_** _(2019.06.04)_ 
 
-## Creational (3/9)
+## Creational (2/9)
 -[ ] Abstract Factory
 -[ ] Builder
 -[ ] Factory Method
@@ -43,7 +43,7 @@
 -[x] **_Singleton_** _(2019.05.25)_  
 -[ ] StaticFactory
 
-## Structural (6/11)
+## Structural (4/11)
 -[ ] Adapter
 -[ ] Bridge
 -[ ] Composite

@@ -2,7 +2,7 @@
 namespace Patterns\Behavioral\Visitor\KamranAhmed;
 
 class Monkey implements Animal {
-	public function shout() {
+	public function shout(): string {
 		return 'Ooh oo aa aa!';
 	}
 

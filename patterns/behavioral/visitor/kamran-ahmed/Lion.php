@@ -2,7 +2,7 @@
 namespace Patterns\Behavioral\Visitor\KamranAhmed;
 
 class Lion implements Animal {
-	public function roar() {
+	public function roar(): string {
 		return 'Roaaar!';
 	}
 

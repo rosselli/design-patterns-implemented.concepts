@@ -2,7 +2,7 @@
 namespace Patterns\Behavioral\Visitor\KamranAhmed;
 
 class Dolphin implements Animal {
-	public function speak() {
+	public function speak(): string {
 		return 'Tuut tutt tuutt!';
 	}
 

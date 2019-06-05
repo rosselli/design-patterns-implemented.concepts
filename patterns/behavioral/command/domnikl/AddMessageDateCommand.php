@@ -8,7 +8,7 @@ class AddMessageDateCommand implements UndoableCommand {
         $this->output = $console;
     }
 
-    public function execute() {
+    public function execute(): void {
         $this->output->enableDate();
     }
 

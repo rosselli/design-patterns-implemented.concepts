@@ -41,7 +41,6 @@
 + Create a class (Invoker) that receives the commands and runs them, forwards the request to Receiver.
 
 
-
 ![](kamran-ahmed/diagram.png)
 ![](domnikl/diagram.png)
 

@@ -2,11 +2,11 @@
     Title <size:20>\nPattern: Mediator\n
 
     interface ChatRoomMediator{
-        + showMessage(User, string);
+        + showMessage(User, string): string;
     }
 
     class ChatRoom implements ChatRoomMediator {
-        + showMessage(User)
+        + showMessage(User): string
     }
 
     class User {
@@ -16,6 +16,8 @@
         + getName()
         + send()
     }
+
+    ChatRoomMediator -left-> User: Injects
 
 
 @enduml

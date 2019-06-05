@@ -5,10 +5,6 @@ use Patterns\Behavioral\Mediator\Domnikl\Subsystem\Client;
 use Patterns\Behavioral\Mediator\Domnikl\Subsystem\Database;
 use Patterns\Behavioral\Mediator\Domnikl\Subsystem\Server;
 
-/**
- * Mediator is the concrete Mediator for this design pattern
- * In this example, I have made a "Hello World" with the Mediator Pattern
- */
 class Mediator implements MediatorInterface {
     private $server;
     private $database;
@@ -24,15 +20,15 @@ class Mediator implements MediatorInterface {
         $this->client->setMediator($this);
     }
 
-    public function makeRequest(){
-        $this->server->process();
+    public function makeRequest(): string {
+        return $this->server->process();
     }
 
     public function queryDb(): string{
         return $this->database->getData();
     }
 
-    public function sendResponse($content){
-        $this->client->output($content);
+    public function sendResponse($content): string {
+        return $this->client->output($content);
     }
 }

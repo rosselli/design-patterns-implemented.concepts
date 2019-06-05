@@ -1,55 +1,26 @@
 # Mediator
 
-This pattern provides an easy way to decouple many components working
-together. It is a good alternative to Observer IF you have a "central
-intelligence", like a controller (but not in the sense of the MVC).
++ An easy way to decouple many components working together. 
 
-All components (called Colleague) are only coupled to the
-MediatorInterface and it is a good thing because in OOP, one good friend
-is better than many. This is the key-feature of this pattern.
-  
-<!-- 
-Mediator
-Real world example
++ It is a **good alternative to Observer IF you have a "central intelligence"**, like a controller.
 
-A general example would be when you talk to someone on your mobile phone, there is a network provider sitting between you and them and your conversation goes through it instead of being directly sent. In this case network provider is mediator.
++ **All components _(called Colleague)_ are only coupled to the MediatorInterface**. This is the key-feature of this pattern.
 
-In plain words
++ **Examples:**   
+	+ When you talk to someone on your mobile phone, there is a network provider sitting between you and them and your conversation goes through it instead of being directly sent. In this case network provider is mediator.
 
-Mediator pattern adds a third party object (called mediator) to control the interaction between two objects (called colleagues). It helps reduce the coupling between the classes communicating with each other. Because now they don't need to have the knowledge of each other's implementation.
+	+ Mediator pattern adds a third party object (called mediator) to control the interaction between two objects (called colleagues). It helps reduce the coupling between the classes communicating with each other.<br> Because now they don't need to have the knowledge of each other's implementation.
 
-Wikipedia says
+	+ The mediator pattern defines an object that encapsulates how a set of objects interact. It is considered a behavioral pattern due to the way it can alter the program's running behavior.
 
-In software engineering, the mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program's running behavior.
++ Domnikl Example: 
+	+ Client is a client that makes requests and gets the response.
+	+ This interface is not mandatory but it is better for Liskov substitution principle concerns.
+	+ Colleague is an abstract colleague who works together but he only knows the Mediator, not other colleagues
 
-Programmatic Example
-
-Here is the simplest example of a chat room (i.e. mediator) with users (i.e. colleagues) sending messages to each other.
-
-First of all, we have the mediator i.e. the chat room
++ Kamran Ahmed example: Chat room (mediator) with users (colleagues) sending messages to each other.
 
 
-
-// Mediator
-
-Then we have our users i.e. colleagues
-
-
-And the usage
-
-$mediator = new ChatRoom();
-
-$john = new User('John Doe', $mediator);
-$jane = new User('Jane Doe', $mediator);
-
-$john->send('Hi there!');
-$jane->send('Hey!');
-
-// Output will be
-// Feb 14, 10:58 [John]: Hi there!
-// Feb 14, 10:58 [Jane]: Hey!
-
---> 
 
 ## Recipe
 + Create a class 

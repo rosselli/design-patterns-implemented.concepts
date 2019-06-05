@@ -18,12 +18,12 @@
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
-## Behavioral (3/11)
+## Behavioral (5/11)
 
 - [ ] Chain of Responsibility
-- [ ] **_Command_** 
+- [x] **_Command_** _(2019.06.05)_
 - [ ] Iterator
-- [ ] Mediator
+- [x] **_Mediator_** _(2019.06.05)_
 - [ ] Memento
 - [x] **_NullObject_** _(2019.05.25)_ 
 - [ ] **_Observer_** 

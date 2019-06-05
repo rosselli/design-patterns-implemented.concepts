@@ -3,18 +3,18 @@ namespace Patterns\Behavioral\Mediator\KamranAhmed;
 
 class User {
 	protected $name;
-	protected $chatMediator;
+	protected $chatRoomMediator;
 
-	public function __construct(string $name, ChatRoomMediator $chatMediator) {
+	public function __construct(string $name, ChatRoomMediator $chatRoomMediator) {
 		$this->name = $name;
-		$this->chatMediator = $chatMediator;
+		$this->chatRoomMediator = $chatRoomMediator;
 	}
 
-	public function getName() {
+	public function getName(): string {
 		return $this->name;
 	}
 
-	public function send($message) {
-		$this->chatMediator->showMessage($this, $message);
+	public function send($message): string {
+		return $this->chatRoomMediator->showMessage($this, $message);
 	}
 }

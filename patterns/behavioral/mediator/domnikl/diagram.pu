@@ -2,9 +2,9 @@
     Title <size:20>\nPattern: Mediator\n
 
     interface MediatorInterface {
-        + sendResponse($content);
-        + makeRequest();
-        + queryDb();
+        + sendResponse($content): string;
+        + makeRequest(): string;
+        + queryDb(): string;
     }
 
     abstract class Colleague {
@@ -17,8 +17,24 @@
         - database
         - client
         + __construct(Database, Client, Server)
-        + makeRequest()
-        + queryDb()
-        + sendResponse()
+        + makeRequest(): string
+        + queryDb(): string
+        + sendResponse(): string
     }
+
+	class Client extends Colleague {
+		+ request(): string
+		+ output(): string
+	}
+
+	class Database extends Colleague {
+		+ getData(): string
+	}
+
+	class Server extends Colleague {
+		+ process(): string
+	}
+
+	MediatorInterface -left-> Colleague: injects
+
 @enduml

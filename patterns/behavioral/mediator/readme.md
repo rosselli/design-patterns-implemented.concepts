@@ -22,9 +22,10 @@
 
 
 
+<!--
 ## Recipe
 + Create a class 
-
+-->
 ![](kamran-ahmed/diagram.png)
 ![](domnikl/diagram.png)
 

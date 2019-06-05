@@ -3,7 +3,8 @@
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
 **Behavioral:** Command | done | done | done | done | done
-**Behavioral:** Mediator | done | done | done | done | done
+**Behavioral:** Mediator | done |  | done | done | done
+**Behavioral:** Memento | done | | done | done | done
 **Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
@@ -18,13 +19,13 @@
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
-## Behavioral (5/11)
+## Behavioral (6/11)
 
 - [ ] Chain of Responsibility
 - [x] **_Command_** _(2019.06.05)_
 - [ ] Iterator
 - [x] **_Mediator_** _(2019.06.05)_
-- [ ] Memento
+- [x] **_Memento_** _(2019.06.05)_
 - [x] **_NullObject_** _(2019.05.25)_ 
 - [ ] **_Observer_** 
 - [x] **Specification** _(2019.05.25)_  

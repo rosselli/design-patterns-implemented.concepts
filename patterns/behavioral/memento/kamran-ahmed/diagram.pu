@@ -1,0 +1,19 @@
+@startuml
+    Title <size:20>\nPattern: Memento\n
+
+    class EditorMemento {
+        * content;
+        + __construct()
+        + getContent(): string
+    }
+
+    class Editor {
+        * content: string
+        + type(): string
+        + getContent(): void
+        + save(): EditorMemento
+        + restore(EditorMemento): void
+    }
+
+    EditorMemento -left-> Editor: injects
+@enduml

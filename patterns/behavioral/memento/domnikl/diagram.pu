@@ -1,0 +1,32 @@
+@startuml
+    Title <size:20>\nPattern: Memento\n
+
+    class Ticket {
+        - $currentState;
+        + __construct()
+        + open(): void
+        + assign(): void
+        + close(): void
+        + saveToMemento(): Memento
+        + restoreFromMemento(Memento)
+        + getState(): State
+    }
+
+    class Memento {
+        - $state;
+        + __construct(State)
+        + getState(): State
+    }
+
+    class State {
+        const STATE_CREATED
+        const STATE_OPENED
+        const STATE_ASSIGNED
+        const STATE_CLOSED
+        - $state;
+        - {static} $validStates
+        + __construct()
+        - {static} ensureIsValidState()
+        + __toString()
+}
+@enduml

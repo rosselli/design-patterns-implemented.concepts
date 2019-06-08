@@ -1,0 +1,30 @@
+@startuml
+    Title <size:20>\nPattern: State\n
+
+    interface WritingState {
+        + write(): string
+    }
+
+    class DefaultText implements WritingState {
+        + write(): string
+    }
+
+    class LowerCase implements WritingState {
+        + write(): string
+    }
+
+    class UpperCase implements WritingState {
+        + write(): string
+    }
+
+    class TextEditor {
+        * $state;
+        + __construct(WritingState)
+        + setState(WritingState): void
+        + type(): string
+    }
+
+    WritingState -left-> TextEditor: injects
+@enduml
+
+

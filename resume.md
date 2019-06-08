@@ -4,9 +4,11 @@
 --- | :---
 **Behavioral:** Command | It encapsulates the invocation and decouples.
 **Behavioral:** Mediator |  
+**Behavioral:** Memento |  
 **Behavioral:** NullObject | It returns objects that won't never be null, eliminating the conditional is_null() check.
 **Behavioral:** Observer |  
 **Behavioral:** Specification | It builds a clear specification of business rules, where objects can be checked against. 
+**Behavioral:** State |  
 **Behavioral:** Visitor | It adds further operations to objects without having to modify them *(open/closed principle)*. 
 **Creational:** Multiton | It has a list of named instances that are used, like a singleton but with N instances.
 **Creational:** Pool | It uses a set of initialized objects kept ready to use (A Pool), rather than allocating and destroying them on demand. 

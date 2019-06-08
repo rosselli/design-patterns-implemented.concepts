@@ -1,0 +1,33 @@
+@startuml
+    Title <size:20>\nPattern: State\n
+
+    class OrderContext {
+        - $state;
+        + {static} create(): OrderContext
+        + setState(State
+        + proceedToNext()
+        + toString()
+    }
+
+    interface State{
+        + proceedToNext(OrderContext)
+        + toString()
+    }
+
+    class StateCreated implements State {
+        + proceedToNext(OrderContext
+        + toString()
+    }
+
+    class StateShipped implements State {
+        + proceedToNext(OrderContext
+        + toString()
+    }
+
+    class StateDone implements State {
+        + proceedToNext(OrderContext
+        + toString()
+    }
+
+    OrderContext -right-> State: injects
+@enduml

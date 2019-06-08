@@ -8,6 +8,7 @@
 **Behavioral:** NullObject | done | done | done | done | done
 **Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
+**Behavioral:** State | done |  | done | done | done 
 **Behavioral:** Visitor | done | done | done | done | done 
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool | done | done | done | done | done 

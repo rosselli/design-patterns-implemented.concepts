@@ -9,6 +9,7 @@
 **Behavioral:** Observer | done | done | done | done | done 
 **Behavioral:** Specification | done | done | done | done | done 
 **Behavioral:** State | done |  | done | done | done 
+**Behavioral:** Strategy | done |  | done | done | done 
 **Behavioral:** Visitor | done | done | done | done | done 
 **Creational:** Multiton | done | done | done | done | done
 **Creational:** Pool | done | done | done | done | done 
@@ -20,7 +21,7 @@
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
-## Behavioral (6/11)
+## Behavioral (7/11)
 
 - [ ] Chain of Responsibility
 - [x] **_Command_** _(2019.06.05)_
@@ -30,8 +31,8 @@
 - [x] **_NullObject_** _(2019.05.25)_ 
 - [ ] **_Observer_** 
 - [x] **Specification** _(2019.05.25)_  
-- [ ] State
-- [ ] Strategy
+- [x] **_State_** _(2019.06.07)_
+- [x] **_Strategy_**
 - [ ] TemplateMethod
 - [x] **_Visitor_** _(2019.06.04)_ 
 

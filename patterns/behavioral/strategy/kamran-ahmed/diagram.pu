@@ -1,0 +1,23 @@
+@startuml
+    Title <size:20>\nPattern: Strategy\n
+
+    interface SortStrategy {
+        + sort(): array
+    }
+
+    class BubbleSortStrategy implements SortStrategy {
+        + sort(): array
+    }
+
+    class QuickSortStrategy implements SortStrategy {
+        + sort(): array
+    }
+
+    class Sorter {
+        * sorter
+        + __construct(SortStrategy)
+        + sort(): array
+    }
+
+	SortStrategy -left-> Sorter: injects
+@enduml

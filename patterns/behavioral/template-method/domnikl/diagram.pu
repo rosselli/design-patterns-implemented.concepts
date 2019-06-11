@@ -1,0 +1,24 @@
+@startuml
+    Title <size:20>\nPattern: Template Method\n
+
+    class CityJourney extends Journey {
+        * enjoyVacation()
+        * buyGift()
+    }
+
+    class BeachJourney extends Journey {
+        * enjoyVacation()
+    }
+
+    {abstract} Journey {
+        - thingsToDo: array
+        + takeATrip()
+        * {abstract} enjoyVacation()
+        * buyGift()
+        - buyAFlight()
+        - takePlane()
+        + getThingsToDo()
+    }
+    note left: final takeATrip()
+
+@enduml

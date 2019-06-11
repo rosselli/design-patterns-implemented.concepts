@@ -1,0 +1,25 @@
+@startuml
+    Title <size:20>\nPattern: Template Method\n
+
+    abstract Builder {
+        + final build()
+        + {abstract} test(): string
+        + {abstract} lint(): string
+        + {abstract} assemble(): string
+        + {abstract} deploy(): string
+    }
+
+    class AndroidBuilder extends Builder {
+        + test(): string
+        + lint(): string
+        + assemble(): string
+        + deploy(): string
+    }
+
+    class IosBuilder extends Builder {
+        + test(): string
+        + lint(): string
+        + assemble(): string
+        + deploy(): string
+    }
+@enduml

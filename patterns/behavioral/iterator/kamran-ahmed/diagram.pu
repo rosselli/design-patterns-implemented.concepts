@@ -1,0 +1,27 @@
+@startuml
+    Title <size:20>\nPattern: \n
+
+    class RadioStation {
+        - frequency
+        + __construct()
+        + getFrequency(): float
+    }
+
+    class StationList implements Countable, Iterator {
+        - stations
+        - counter
+        + addStation(RadioStation): void
+        + removeStation(RadioStation): void
+        + count(): int
+        + current(): RadioStation
+        + key(): int
+        + next(): void
+        + rewind(): void
+        + valid(): bool
+		+ getStations(): array
+		+ getCounter(): int
+    }
+
+    RadioStation -left-> StationList
+
+@enduml

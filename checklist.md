@@ -25,7 +25,7 @@
 
 - [x] **_Chain of Responsibility_** _(2019.06.11)_
 - [x] **_Command_** _(2019.06.05)_
-- [ ] Iterator
+- [x] **_Iterator_** _(2019.06.11)_
 - [x] **_Mediator_** _(2019.06.05)_
 - [x] **_Memento_** _(2019.06.05)_
 - [x] **_NullObject_** _(2019.05.25)_ 

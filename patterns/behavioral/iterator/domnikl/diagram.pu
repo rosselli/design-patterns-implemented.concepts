@@ -1,0 +1,32 @@
+@startuml
+    Title <size:20>\nPattern: Iterator\n
+
+    class Book {
+        - author
+        - title
+        + __construct()
+        + getAuthor(): string
+        + getTitle(): string
+        + getAuthorAndTitle(): string
+    }
+
+    class BookList implements Countable, Iterator{
+        - books: array
+        - currentIndex: integer
+        + addBook(): void
+        + removeBook(): void
+        + count(): int
+        + current(): Book
+        + key(): int
+        + next(): void
+        + rewind(): void
+        + valid(): bool
+    }
+
+    BookList <-left- Book: " injects"
+@enduml
+
+
+
+
+

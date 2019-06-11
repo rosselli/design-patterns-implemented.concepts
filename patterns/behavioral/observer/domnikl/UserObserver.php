@@ -8,7 +8,7 @@ class UserObserver implements SplObserver {
     private $changedUsers = [];
 
     # It is called by the Subject, usually by SplSubject::notify()
-    public function update(SplSubject $subject) {
+    public function update(SplSubject $subject): void {
         $this->changedUsers[] = clone $subject;
     }
 

@@ -2,18 +2,18 @@
 	Title <size:20>\nPattern: Observer\n
 
 	class User implements SplSubject {
-		- email
-		- observers
+		- email: string
+		- observers: array
 		+ __construct(SplObjectStorage)
-		+ attach(SplObserver)
-		+ detach(SplObserver)
-		+ changeEmail()
-		+ notify()
+		+ attach(SplObserver): void
+		+ detach(SplObserver): void
+		+ changeEmail(): void
+		+ notify(): void
 	}
 
 	class UserObserver implements SplObserver {
 		- changedUsers: array
-		+ update(SplSubject)
+		+ update(SplSubject): void
 		+ getChangedUsers(): array
 	}
 

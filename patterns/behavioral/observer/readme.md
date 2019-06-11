@@ -7,6 +7,11 @@
 + PHP already defines two interfaces that can help to implement this pattern: **SplObserver and SplSubject**.
 
 
+## Entities
++ Subject
++ Observer
+
+
 ## Examples
 + The **job seekers where they subscribe to some job posting site** and they are notified whenever there is a matching job opportunity.
 + A **message queue system** is observed to show the progress of a job in a GUI.
@@ -21,6 +26,13 @@
 + Every command method has to call notify() to inform the change.
 + Every change notified the subject is updated (cloned and returned).
 
+![](kamran-ahmed/diagram.png)
+![](domnikl/diagram.png)
+
+
+
 ## Sources
++ [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/Observer)
++ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-observer)
 
 

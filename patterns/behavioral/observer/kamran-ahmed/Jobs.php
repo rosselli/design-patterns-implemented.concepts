@@ -1,27 +1,15 @@
 <?php
 namespace Patterns\Behavioral\Observer\KamranAhmed;
 
-use SplSubject;
+class JobPost {
+	private $title;
 
-class Jobs {
-	protected $title;
-	protected $publishers;
-
-	public function __construct(SplSubject $publishers) {
-		$this->publishers = $publishers;
-	}
-
-	public function getTitle() {
-		return $this->title;
-	}
-
-	public function addJob(string  $title) {
+	public function __construct(string $title) {
 		$this->title = $title;
-		$this->publishers->notify();
 	}
 
-	public function getPublishers() {
-		return $this->publishers;
+	public function getTitle(): string {
+		return $this->title;
 	}
 }
 

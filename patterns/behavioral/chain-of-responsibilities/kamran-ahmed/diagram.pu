@@ -1,0 +1,26 @@
+@startuml
+    Title <size:20>\nPattern: Chain Of Responsibilities\n
+
+    abstract class Account {
+        * successor;
+        * balance;
+        + setNext(Account)
+        + pay()
+        + canPay()
+    }
+
+    class Bank extends Account {
+        * balance;
+        + __construct()
+    }
+
+    class Paypal extends Account {
+        * balance;
+        + __construct()
+    }
+
+    class Bitcoin extends Account {
+        * balance;
+        + __construct()
+    }
+@enduml

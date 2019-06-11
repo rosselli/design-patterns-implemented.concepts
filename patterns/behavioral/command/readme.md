@@ -23,7 +23,7 @@
 + The AddMessageDateCommand *concrete command( tweaks receiver to add current date to messages
 
 ## From the KamranAhmed code
-+ First of all we have the receiver that has the implementation of every action that could be performed.
++ We have the receiver that has the implementation of every action that could be performed.
 + Then we have an interface that each of the commands are going to implement and then we have a set of commands.
 + Then we have an Invoker with whom the client will interact to process any commands.
 + **Bulb** (Receiver), **TurnOn and TurnOff** (Commands) and **RemoteControl** (Invoker).

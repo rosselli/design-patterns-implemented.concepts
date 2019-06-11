@@ -21,19 +21,19 @@
 **Structural:** Proxy | done | done | done | done | done 
 **Structural:** Registry | done | done | done | done | done
 
-## Behavioral (7/11)
+## Behavioral (11)
 
-- [ ] Chain of Responsibility
+- [x] **_Chain of Responsibility_** _(2019.06.11)_
 - [x] **_Command_** _(2019.06.05)_
 - [ ] Iterator
 - [x] **_Mediator_** _(2019.06.05)_
 - [x] **_Memento_** _(2019.06.05)_
 - [x] **_NullObject_** _(2019.05.25)_ 
-- [ ] **_Observer_** 
-- [x] **Specification** _(2019.05.25)_  
+- [x] **_Observer_** _(2019.06.08)_ 
+- [x] **_Specification_** _(2019.05.25)_  
 - [x] **_State_** _(2019.06.07)_
-- [x] **_Strategy_**
-- [ ] TemplateMethod
+- [x] **_Strategy_** _(2019.06.08)_
+- [x] **_TemplateMethod_** _(2019.06.11)_
 - [x] **_Visitor_** _(2019.06.04)_ 
 
 ## Creational (2/9)

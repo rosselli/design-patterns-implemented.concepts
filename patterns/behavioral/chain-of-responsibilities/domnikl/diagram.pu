@@ -1,0 +1,21 @@
+@startuml
+    Title <size:20>\nPattern: Chain Of Responsibilities\n
+
+    abstract Handler {
+        - successor = null
+        + __construct(Handler)
+        + {final} handle(RequestInterface)
+        + {abstract} processing(RequestInterface $request);
+    }
+
+    class SlowDatabaseHandler extends Handler {
+        protected function processing(RequestInterface)
+    }
+
+    class HttpInMemoryCacheHandler extends Handler {
+        - data
+        + __construct(array, Handler)
+        * processing(RequestInterface)
+    }
+
+@enduml

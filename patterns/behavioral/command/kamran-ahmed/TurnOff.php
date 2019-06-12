@@ -2,21 +2,21 @@
 namespace Patterns\Behavioral\Command\KamranAhmed;
 
 class TurnOff implements Command {
-	protected $bulb;
+	private $bulb;
 
 	public function __construct(Bulb $bulb) {
 		$this->bulb = $bulb;
 	}
 
-	public function execute() {
+	public function execute(): void {
 		$this->bulb->turnOff();
 	}
 
-	public function undo() {
+	public function undo(): void  {
 		$this->bulb->turnOn();
 	}
 
-	public function redo() {
+	public function redo(): void  {
 		$this->execute();
 	}
 }

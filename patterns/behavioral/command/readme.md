@@ -15,6 +15,12 @@
 
 + Allows you to encapsulate actions in objects, in other words to decouple client from receiver.
 
+## Entities
++ Client
++ Invoker
++ Command
++ Receiver
+
 
 ## From the Domnikl code
 + The concrete command calls "print" on the Receiver, but an external invoker just knows that it can call "execute"

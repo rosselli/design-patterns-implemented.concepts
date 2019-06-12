@@ -2,7 +2,7 @@
 namespace Patterns\Behavioral\Command\KamranAhmed;
 
 interface Command {
-	public function execute();
-	public function undo();
-	public function redo();
+	public function execute(): void ;
+	public function undo(): void ;
+	public function redo(): void ;
 }

@@ -2,34 +2,34 @@
     Title <size:20>\nPattern: Command\n
 
     interface Command {
-        + execute();
-        + undo();
-        + redo();
+        + execute(): void
+        + undo(): void
+        + redo(): void
     }
 
     class Bulb {
-        + turnOn()
-        + turnOff()
+        + turnOn(): string
+        + turnOff(): string
     }
 
     class TurnOn implements Command {
-        protected $bulb;
+        - $bulb
         + __construct(Bulb)
-        + execute()
-        + undo()
-        + redo()
+        + execute(): void
+        + undo(): void
+        + redo(): void
     }
 
     class TurnOff implements Command {
-        protected $bulb;
+        - $bulb
         + __construct(Bulb)
-        + execute()
-        + undo()
-        + redo()
+        + execute(): void
+        + undo(): void
+        + redo(): void
     }
 
     class RemoteControl {
-        + submit(Command)
+        + submit(Command): void
     }
 
     Bulb -left-> TurnOn: " injects"

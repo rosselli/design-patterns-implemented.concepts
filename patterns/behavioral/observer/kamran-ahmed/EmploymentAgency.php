@@ -6,7 +6,7 @@ class EmploymentAgency {
 
 	protected function notify(JobPost $jobPosting) {
 		$output;
-		foreach ($this->observers as $observer): array {
+		foreach ($this->observers as $observer) {
 			$output[] = $observer->onJobPosted($jobPosting);
 		}
 		return $output;

@@ -9,13 +9,13 @@ abstract class Journey {
      * Notice it is final to "freeze" the global behavior of algorithm.
      * If you want to override this contract, make an interface with only takeATrip() and subclass it.
      */
-    final public function takeATrip() {
+    final public function takeATrip(): void {
         $this->thingsToDo[] = $this->buyAFlight();
         $this->thingsToDo[] = $this->takePlane();
         $this->thingsToDo[] = $this->enjoyVacation();
 
         $buyGift = $this->buyGift();
-        if ($buyGift !== null) {
+        if ($buyGift !== 0) {
             $this->thingsToDo[] = $buyGift;
         }
 
@@ -26,8 +26,8 @@ abstract class Journey {
     abstract protected function enjoyVacation(): string;
 
     # This method is also part of the algorithm but it is optional. You can override it only if you need to
-    protected function buyGift(): null {
-        return null;
+    protected function buyGift(){
+		return 0;
     }
 
     private function buyAFlight(): string {

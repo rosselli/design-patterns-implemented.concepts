@@ -12,7 +12,7 @@ class Group implements Role {
         return sprintf('Group: %s', $this->name);
     }
 
-    public function accept(RoleVisitorInterface $visitor) {
+    public function accept(RoleVisitorInterface $visitor): void {
         $visitor->visitGroup($this);
     }
 }

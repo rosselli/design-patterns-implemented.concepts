@@ -2,40 +2,40 @@
 	Title <size:20>\nPattern: Visitor\n
 
     interface Animal {
-        + accept(AnimalOperation)
-    }
-
-    interface AnimalOperation {
-        + visitMonkey(Monkey)
-        + visitLion(Lion)
-        + visitDolphin(Dolphin)
+        + accept(AnimalOperation): string
     }
 
     class Dolphin implements Animal {
-        + speak()
-        + accept(AnimalOperation)
+        + speak(): string
+        + accept(AnimalOperation): string
     }
 
     class Lion implements Animal {
-        + roar()
-        + accept(AnimalOperation)
+        + roar(): string
+        + accept(AnimalOperation): string
     }
 
     class Monkey implements Animal {
-        + shout()
-        + accept(AnimalOperation)
+        + shout(): string
+        + accept(AnimalOperation): string
+    }
+
+    interface AnimalOperation {
+        + visitMonkey(Monkey): string
+        + visitLion(Lion): string
+        + visitDolphin(Dolphin): string
     }
 
     class Jump implements AnimalOperation {
-        + visitMonkey(Monkey)
-        + visitLion(Lion)
-        + visitDolphin(Dolphin)
+        + visitMonkey(Monkey): string
+        + visitLion(Lion): string
+        + visitDolphin(Dolphin): string
     }
 
     class Speak implements AnimalOperation {
-        + visitMonkey(Monkey)
-        + visitLion(Lion)
-        + visitDolphin(Dolphin)
+        + visitMonkey(Monkey): string
+        + visitLion(Lion): string
+        + visitDolphin(Dolphin): string
     }
 
     AnimalOperation -left-> Animal: " injects"

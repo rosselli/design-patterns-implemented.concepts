@@ -12,7 +12,7 @@ class User implements Role {
         return sprintf('User %s', $this->name);
     }
 
-    public function accept(RoleVisitorInterface $visitor) {
+    public function accept(RoleVisitorInterface $visitor): void {
         $visitor->visitUser($this);
     }
 }

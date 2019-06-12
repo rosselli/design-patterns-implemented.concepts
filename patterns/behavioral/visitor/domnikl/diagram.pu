@@ -2,26 +2,26 @@
 	Title <size:20>\nPattern: Visitor\n
 
     interface Role {
-        + accept(RoleVisitorInterface);
-    }
-
-    interface RoleVisitorInterface {
-        + visitUser(User): void ;
-        + visitGroup(Group): void ;
+        + accept(RoleVisitorInterface): void
     }
 
     class Group implements Role {
         - name
         + __construct()
         + getName(): string
-        + accept(RoleVisitorInterface)
+        + accept(RoleVisitorInterface): void
     }
 
     class User implements Role {
         - name
         + __construct()
         + getName(): string
-        + accept(RoleVisitorInterface)
+        + accept(RoleVisitorInterface): void
+    }
+
+    interface RoleVisitorInterface {
+        + visitUser(User): void
+        + visitGroup(Group): void
     }
 
     class RoleVisitor implements RoleVisitorInterface{

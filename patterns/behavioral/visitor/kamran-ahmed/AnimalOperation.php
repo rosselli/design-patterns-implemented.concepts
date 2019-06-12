@@ -2,7 +2,7 @@
 namespace Patterns\Behavioral\Visitor\KamranAhmed;
 
 interface AnimalOperation {
-	public function visitMonkey(Monkey $monkey);
-	public function visitLion(Lion $lion);
-	public function visitDolphin(Dolphin $dolphin);
+	public function visitMonkey(Monkey $monkey): string;
+	public function visitLion(Lion $lion): string;
+	public function visitDolphin(Dolphin $dolphin): string;
 }

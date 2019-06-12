@@ -1,7 +1,8 @@
 {
     "name": "rosselli/design-patterns-implementation",
     "require": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "psr/http-message": "^1.0"
     },
     "authors": [
         {

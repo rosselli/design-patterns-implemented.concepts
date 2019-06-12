@@ -1,15 +1,14 @@
 <?php
 namespace Tests\Domnikl;
 
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\HttpInMemoryCacheHandler;
-use DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\SlowDatabaseHandler;
+use Patterns\Behavioral\ChainOfResponsibilities\Domnikl\Responsible\HttpInMemoryCacheHandler;
+use Patterns\Behavioral\ChainOfResponsibilities\Domnikl\Responsible\SlowDatabaseHandler;
 use PHPUnit\Framework\TestCase;
 
-class ChainTest extends TestCase {
+class ChainOfResponsibilitiesTest extends TestCase {
     private $chain;
 
-    protected function setUp() {
+	protected function setUp(): void {
         $this->chain = new HttpInMemoryCacheHandler(
         	['/foo/bar?index=1' => 'Hello In Memory!'],
 			new SlowDatabaseHandler()

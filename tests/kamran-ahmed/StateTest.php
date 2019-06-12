@@ -8,7 +8,7 @@ use Patterns\Behavioral\State\KamranAhmed\UpperCase;
 use PHPUnit\Framework\TestCase;
 
 class StateTest extends TestCase {
-	public function test() {
+	public function testState() {
 		$editor = new TextEditor(new DefaultText());
 		$this->assertSame('First line', $editor->type('First line'));
 

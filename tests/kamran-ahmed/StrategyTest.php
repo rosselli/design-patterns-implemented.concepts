@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class StrategyTest extends TestCase {
 
-	public function test() {
+	public function testStrategy() {
 		$dataset = [3, 5, 8, 1, 2, 4];
 
 		$sorter = new Sorter(new AscSortStrategy());

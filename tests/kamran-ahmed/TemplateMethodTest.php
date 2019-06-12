@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class TemplateMethodTest extends TestCase {
 
-	public function test() {
+	public function testTemplateMethod() {
 		$androidBuilder = new AndroidBuilder();
 		$this->assertSame([
 			'Running android tests', 'Linting the android code', 'Assembling the android build', 'Deploying android build to server'

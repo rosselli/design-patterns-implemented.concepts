@@ -5,7 +5,7 @@ use Patterns\Behavioral\Memento\KamranAhmed\Editor;
 use PHPUnit\Framework\TestCase;
 
 class MementoTest extends TestCase {
-	public function test() {
+	public function testMemento() {
 		$editor = new Editor();
 		$editor->type('This is the first sentence.');
 		$editor->type('This is second.');

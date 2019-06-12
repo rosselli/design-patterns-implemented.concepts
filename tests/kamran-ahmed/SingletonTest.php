@@ -5,7 +5,7 @@ use Patterns\Creational\Singleton\KamranAhmed\President;
 use PHPUnit\Framework\TestCase;
 
 class SingletonTest extends TestCase {
-	public function testPresident() {
+	public function testSingleton() {
 		$president1 = President::getInstance();
 		$president2 = President::getInstance();
 

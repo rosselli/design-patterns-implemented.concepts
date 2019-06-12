@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ObserverTest extends TestCase {
 
-	public function testSubscribers() {
+	public function testObserver() {
 		$johnDoe = new JobSeeker('John Doe');
 		$janeDoe = new JobSeeker('Jane Doe');
 

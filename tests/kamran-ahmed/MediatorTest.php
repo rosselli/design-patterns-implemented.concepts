@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class MediatorTest extends TestCase {
 
-	public function testSend() {
+	public function testMediator() {
 		$time = date('M d, y H:i');
 		$mediator = new ChatRoom();
 

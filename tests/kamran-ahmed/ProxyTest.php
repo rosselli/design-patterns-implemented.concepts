@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class ProxyTest extends TestCase {
 
-	public function testSecurity() {
+	public function testProxy() {
 		$door = new SecuredDoor(new LabDoor());
 		$this->assertSame('Big no! It ain\'t possible.', $door->open('invalid'));
 

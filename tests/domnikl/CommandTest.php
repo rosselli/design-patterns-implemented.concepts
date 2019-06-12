@@ -7,7 +7,7 @@ use Patterns\Behavioral\Command\Domnikl\Receiver;
 use PHPUnit\Framework\TestCase;
 
 class CommandTest extends TestCase {
-    public function testInvocation() {
+    public function testCommand() {
         $invoker = new Invoker();
         $receiver = new Receiver();
 

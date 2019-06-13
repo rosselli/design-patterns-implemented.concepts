@@ -1,0 +1,11 @@
+@startuml
+    Title <size:20>\nPattern: Simple Factory\n
+
+    class Bicycle {
+        + driveTo()
+    }
+
+    class SimpleFactory {
+        + createBicycle(): Bicycle
+    }
+@enduml

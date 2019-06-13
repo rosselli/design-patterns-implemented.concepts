@@ -1,0 +1,20 @@
+@startuml
+    Title <size:20>\nPattern: Simple Factory\n
+
+    interface Door{
+        + getWidth(): float
+        + getHeight(): float
+    }
+
+    class WoodenDoor implements Door {
+        - width
+        - height
+        + __construct()
+        + getWidth(): float
+        + getHeight(): float
+    }
+
+    class DoorFactory {
+        + {static} makeDoor(): Door
+    }
+@enduml

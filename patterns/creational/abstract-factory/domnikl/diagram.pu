@@ -1,0 +1,26 @@
+@startuml
+    Title <size:20>\nPattern: Abstract Factory\n
+
+    interface Parser {
+        + parse(): array
+    }
+
+    class JsonParser implements Parser {
+        + parse(): array
+    }
+
+    class CsvParser implements Parser {
+        const OPTION_CONTAINS_HEADER = true
+        const OPTION_CONTAINS_NO_HEADER = false
+        - $skipHeaderLine
+        + __construct()
+        + parse()
+    }
+
+    class ParserFactory {
+        + createCsvParser(): CsvParser
+        + createJsonParser()
+    }
+
+	ParserFactory -left-> Parser: returns
+@enduml

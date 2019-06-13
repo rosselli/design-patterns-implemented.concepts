@@ -1,0 +1,74 @@
+@startuml
+    Title <size:20>\nPattern: Abstract Factory\n
+
+    abstract class DoorsAbstract {
+		- width
+		- height
+		+ __construct()
+		+ getWidth(): float
+		+ getHeight(): float
+        + {abstract} getDescription()
+    }
+
+    interface DoorFittingExpertInterface {
+        + getDescription(): string
+    }
+
+    class Welder implements DoorFittingExpertInterface {
+        + getDescription(): string
+    }
+
+    class Carpenter implements DoorFittingExpertInterface {
+        + getDescription(): string
+    }
+
+    interface DoorFactory {
+        + makeDoor(): DoorsAbstract
+        + makeFittingExpert(): DoorsAbstract
+    }
+
+    class WoodenDoorFactory implements DoorFactory {
+        + makeDoor(): DoorsAbstract
+        + makeFittingExpert(): DoorFittingExpertInterface
+    }
+
+	WoodenDoorFactory <-- DoorsAbstract: returns
+	WoodenDoorFactory <-- DoorFittingExpertInterface: returns
+
+
+    class IronDoorFactory implements DoorFactory {
+        + makeDoor(): DoorsAbstract
+        + makeFittingExpert(): DoorFittingExpertInterface
+    }
+
+	IronDoorFactory <-- DoorsAbstract: returns
+	IronDoorFactory <-- DoorFittingExpertInterface: returns
+
+    class WoodenDoor extends DoorsAbstract {
+        + getDescription()
+    }
+
+    class IronDoor extends DoorsAbstract {
+        + getDescription()
+    }
+
+
+'DoorFactoryInterface.php
+'Carpenter.php
+'WoodenDoorFactory.php
+'IronDoor.php
+'DoorsAbstract.php
+'WoodenDoor.php
+'DoorFittingExpertInterface.php
+'Welder.php
+'IronDoorFactory.php
+
+
+
+
+'    WoodenDoorFactory --> DoorFactory: " implements"
+'    IronDoorFactory --> DoorFactory: " implements"
+'    Welder --> DoorFittingExpert: " implements"
+'    Carpenter --> DoorFittingExpert: " implements"
+
+@enduml

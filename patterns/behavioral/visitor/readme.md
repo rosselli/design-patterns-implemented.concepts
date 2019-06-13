@@ -8,6 +8,9 @@
 A practical result of this separation is the **ability to add new operations to existing object structures without modifying those structures**. 
 It is one way to follow the **open/closed principle**.
 
+## Entities
++ Accept
+
 ## Case
 + Consider someone visiting Dubai. They just need a visa to enter Dubai. After arrival, they can come and visit any place in Dubai on their own without having to ask for permission or to do some leg work in order to visit any place here, just let them know of a place and they can visit it. 
     + The Visitor pattern helps you **add places to visit** so that they can visit as much as they can without having to do any leg work.

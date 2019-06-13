@@ -1,0 +1,21 @@
+@startuml
+    Title <size:20>\nPattern: Prototype\n
+
+    abstract class BookPrototype {
+        * title;
+        * category;
+        + {abstract} __clone();
+        + getTitle(): string
+        + setTitle(): void
+    }
+
+    class FooBookPrototype extends BookPrototype {
+        * category
+        + __clone()
+    }
+
+    class BarBookPrototype extends BookPrototype {
+        * category = 'Bar';
+        + __clone()
+    }
+@enduml

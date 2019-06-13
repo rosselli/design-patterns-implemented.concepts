@@ -36,17 +36,17 @@
 - [x] **_TemplateMethod_** _(2019.06.11)_
 - [x] **_Visitor_** _(2019.06.04)_ 
 
-## Creational (2/9)
+## Creational (7/9)
 
-- [ ] Abstract Factory
-- [ ] Builder
-- [ ] Factory Method
+- [x] **_Abstract Factory_** _(2019.06.13)_
+- [ ] **_Builder_**
+- [x] **_Factory Method_** _(2019.06.13)_
 - [x] **_Multiton_** _(2019.05.25)_ 
 - [ ] **_Pool_** 
-- [ ] Prototype
-- [ ] SimpleFactory
+- [x] **_Prototype_** _(2019.06.13)_
+- [x] **_SimpleFactory_** _(2019.06.13)_
 - [x] **_Singleton_** _(2019.05.25)_  
-- [ ] StaticFactory
+- [x] **_StaticFactory_** _(2019.06.13)_
 
 ## Structural (4/11)
 

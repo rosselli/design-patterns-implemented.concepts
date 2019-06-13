@@ -1,0 +1,13 @@
+@startuml
+    Title <size:20>\nPattern: Prototype\n
+
+    class Sheep {
+        * name
+        * category
+        + __construct()
+        + setName(): void
+        + getName(): string
+        + setCategory(): void
+        + getCategory(): string
+    }
+@enduml

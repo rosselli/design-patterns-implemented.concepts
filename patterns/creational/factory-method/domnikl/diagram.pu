@@ -1,0 +1,33 @@
+@startuml
+    Title <size:20>\nPattern: Factory Method\n
+
+    interface LoggerFactory {
+        + createLogger(): Logger
+    }
+
+    class FileLoggerFactory implements LoggerFactory {
+        - filePath
+        + __construct()
+        + createLogger(): Logger
+    }
+
+    class StdoutLoggerFactory implements LoggerFactory{
+        + createLogger(): Logger
+    }
+
+    interface Logger {
+        + log()
+    }
+
+    class FileLogger implements Logger {
+        - filePath
+        + __construct()
+        + log(): void
+    }
+
+    class StdoutLogger implements Logger {
+        + log(): string
+    }
+
+	LoggerFactory <-left- Logger: returns
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+    Title <size:20>\nPattern: Factory Method\n
+
+    interface Interviewer {
+        + askQuestions(): string
+    }
+
+    class Developer implements Interviewer {
+        + askQuestions(): string
+    }
+
+    class CommunityExecutive implements Interviewer {
+        + askQuestions(): string
+    }
+
+    abstract HiringManager {
+        * {abstract} makeInterviewer(): Interviewer;
+        + takeInterview(): string
+    }
+
+    class DevelopmentManager extends HiringManager {
+        * makeInterviewer(): Interviewer
+    }
+
+    class MarketingManager extends HiringManager {
+        * makeInterviewer(): Interviewer
+    }
+
+    HiringManager <-left- Interviewer: returns
+@enduml

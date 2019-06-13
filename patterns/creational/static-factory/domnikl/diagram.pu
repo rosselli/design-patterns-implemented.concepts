@@ -1,0 +1,22 @@
+@startuml
+    Title <size:20>\nPattern: Static Factory\n
+
+    interface Formatter {
+        + format(): string
+    }
+
+    class FormatString implements Formatter {
+        + format(): string
+    }
+
+    class FormatNumber implements Formatter {
+        + format(): string
+    }
+
+    class StaticFactory {
+        + {static} factory(): Formatter
+    }
+    note left: Final Class
+
+	StaticFactory <-- Formatter
+@enduml

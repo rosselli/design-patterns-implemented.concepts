@@ -36,10 +36,10 @@
 - [x] **_TemplateMethod_** _(2019.06.11)_
 - [x] **_Visitor_** _(2019.06.04)_ 
 
-## Creational (7/9)
+## Creational (9)
 
 - [x] **_Abstract Factory_** _(2019.06.13)_
-- [ ] **_Builder_**
+- [x] **_Builder_** _(2019.06.14)_ 
 - [x] **_Factory Method_** _(2019.06.13)_
 - [x] **_Multiton_** _(2019.05.25)_ 
 - [x] **_Pool_** _(2019.06.14)_ 

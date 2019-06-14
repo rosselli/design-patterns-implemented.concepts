@@ -1,0 +1,51 @@
+@startuml
+    Title <size:20>\nPattern: Builder\n
+
+    class Director {
+        + build(BuilderInterface): Vehicle
+    }
+
+    interface BuilderInterface {
+        + createVehicle(): Vehicle
+        + addWheel(): void
+        + addEngine(): void
+        + addDoors(): void
+        + getVehicle(): Vehicle
+    }
+
+    class CarBuilder implements BuilderInterface {
+        - car
+        + addDoors(): void
+        + addEngine(): void
+        + addWheel(): void
+        + createVehicle(): Vehicle
+        + getVehicle(): Vehicle
+    }
+
+    class TruckBuilder implements BuilderInterface {
+        - truck
+        + addDoors(): void
+        + addEngine(): void
+        + addWheel(): void
+        + createVehicle(): Truck
+        + getVehicle(): Vehicle
+    }
+
+    abstract Vehicle {
+        - data: array
+        + setPart()
+    }
+
+    class Car extends Vehicle
+    class Truck extends Vehicle
+    class Engine
+    class Wheel
+    class Door
+
+	Director <-left- BuilderInterface: injects
+	Vehicle -left-> BuilderInterface: returns
+	Engine --> BuilderInterface
+	Wheel --> BuilderInterface
+	Door --> BuilderInterface
+
+@enduml

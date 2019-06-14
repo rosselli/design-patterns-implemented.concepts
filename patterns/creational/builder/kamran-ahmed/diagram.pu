@@ -1,0 +1,28 @@
+@startuml
+    Title <size:20>\nPattern: Builder\n
+
+    class Burger {
+        * size
+        * cheese = false
+        * pepperoni = false
+        * lettuce = false
+        * tomato = false
+        + __construct(BurgerBuilder)
+    }
+
+    class BurgerBuilder {
+        + size
+        + cheese = false
+        + pepperoni = false
+        + lettuce = false
+        + tomato = false
+        + __construct()
+        + addPepperoni(): self
+        + addLettuce(): self
+        + addCheese(): self
+        + addTomato(): self
+        + build(): Burger
+    }
+
+    Burger -left-> BurgerBuilder: injects
+@enduml

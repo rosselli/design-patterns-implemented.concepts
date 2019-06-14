@@ -4,12 +4,14 @@
 
 + **Command** _(Behavioral)_ <br>It encapsulates the invocation and decouples.<br>**_[client, invoker, command, receiver, undo]_**.
 
+
+
 ## Factories
 + **Abstract Factory** _(Creational)_ <br> .<br>**_[]_**
 + **Factory Method** _(Creational)_ <br> .<br>**_[]_**
 + **SimpleFactory** _(Creational)_ <br> .<br>**_[]_**
 + **StaticFactory** _(Creational)_ <br> .<br>**_[]_**
-
++ **Builder** _(Creational)_ <br>It creates different flavors of an object while avoiding constructor pollution.<br>**_[fluent interface, factory]_**.
 
 | | OK | Resume
 --- | --- | :---
@@ -65,7 +67,7 @@
 ## State Changing
 + **Memento** _(Behavioral)_ <br>It captures and stores the current state of an object, in a manner that it can be restored later.<br>**_[undo-redo, state, clone]_** 
 
-+ **State** _(Behavioral)_ <br>It lets you change the behavior of a class when the state changes.<br>**_[state, created-payed-shipped-done]_** 
++ **State** _(Behavioral)_ <br>It lets you change the behavior of a class when the state changes.<br>**_[state, "created, payed, shipped and done"]_** 
 
 + **Observer** _(Behavioral)_ <br>An object, called the subject, maintains a list of its dependents (observers), and notifies them automatically of any state changes.<br>**_[state, notification, observer, subject]_**
 

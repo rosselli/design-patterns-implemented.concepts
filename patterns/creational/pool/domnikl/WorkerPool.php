@@ -13,11 +13,10 @@ class WorkerPool implements \Countable {
         }
 
         $this->occupiedWorkers[spl_object_hash($worker)] = $worker;
-
         return $worker;
     }
 
-    public function dispose(StringReverseWorker $worker) {
+    public function dispose(StringReverseWorker $worker): void {
         $key = spl_object_hash($worker);
 
         if (isset($this->occupiedWorkers[$key])) {

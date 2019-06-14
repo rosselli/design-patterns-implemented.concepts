@@ -62,7 +62,6 @@
 + **Visitor** _(Behavioral)_ <br>It adds further operations to objects without having to modify them *(open/closed principle)*.<br>**_[accept, open/closed, legacy systems]_**. 
 
 
-
 ## State Changing
 + **Memento** _(Behavioral)_ <br>It captures and stores the current state of an object, in a manner that it can be restored later.<br>**_[undo-redo, state, clone]_** 
 
@@ -72,13 +71,13 @@
 
 
 ## High Cost Objects
-+ **Flyweight** _(Structural)_ <br>It shares similar objects as much as possible to minimise memory usage.<br>**_[]_**
++ **Flyweight** _(Structural)_ <br>It shares similar objects as much as possible to minimise memory usage.<br>**_[pool, cache, share, "returning existing objects or creating new ones"]_**
 
-+ **Proxy** _(Structural)_ <br>It avoids the instance to execute again the heavy job, already executed by the parent or it is a security layer who opens the door to the functionality.<br>**_[]_** 
-
-+ **Pool** _(Creational)_ <br>It uses a set of initialized objects kept ready to use (A Pool), rather than allocating and destroying them on demand.<br>**_[]_** 
++ **Pool** _(Creational)_ <br>It uses a set of initialized objects kept ready to use (A Pool), rather than allocating and destroying them on demand.<br>**_[pool, recycle, "get and dispose", "free and occupied", "create, receive, keep, deliver back and don't destroy"]_** 
 
 + **Prototype** _(Creational)_ <br>Create object based on an existing object through cloning.<br>**_[clone]_**.
+
++ **Proxy** _(Structural)_ <br>It avoids the instance to execute again the heavy job, already executed by the parent or it is a security layer who opens the door to the functionality.<br>**_[security, heavy job, "execute method from another class"]_** 
 
 
 ## Global State

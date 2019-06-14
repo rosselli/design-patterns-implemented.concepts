@@ -4,15 +4,15 @@
 	class WorkerPool implements Countable {
 		- $occupiedWorkers = []
 		- $freeWorkers = []
-		+ get()
-		+ dispose(StringReverseWorker)
-		+ count()
+		+ get(): Workers
+		+ dispose(StringReverseWorker): void
+		+ count(): int
 	}
 
 	class StringReverseWorker {
 		- $createdAt
 		+  __construct()
-		+ run()
+		+ run(): string
 	}
 
 	StringReverseWorker -left-> WorkerPool: " injects"

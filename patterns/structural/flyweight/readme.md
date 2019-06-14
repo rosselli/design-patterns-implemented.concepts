@@ -24,10 +24,13 @@
 + The Factory only will make the object if the key doesn't exists. 
 + The Factory will return the object newly created or already create (if the key already exists). 
 
+## Diagrams
+### Domnikl
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
 ![](kamran-ahmed/diagram.png)
 
-
 ## Sources
-+ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-flyweight)
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/Flyweight)
++ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-flyweight)

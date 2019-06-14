@@ -3,25 +3,25 @@
 
     class GreenTea {
     	- type
-    	__construct(type)
-    	+ getType()
-
+    	__construct()
+    	+ getType(): string
     }
 
     class TeaFactory {
         * availableTea: array
         + make(): GreenTea
-        + getAvailableTea()
+        + getAvailableTea(): array
     }
 
     class TeaShop {
-        * orders
-        * teaMaker
+        * orders: array
+        * teaMaker: TeaFactory
+        * messages: array
         + __construct(TeaFactory)
-        + takeOrder()
+        + takeOrder(): void
         + serve(): array
     }
 
-    GreenTea --> TeaFactory: " injects"
-    TeaFactory --> TeaShop: " injects"
+    GreenTea -left-> TeaFactory: " injects"
+    TeaFactory -left-> TeaShop: " injects"
 @enduml

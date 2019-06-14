@@ -28,11 +28,14 @@ Yet another example would be some sort of data-mapper implementation. For exampl
 + Create a class (Proxy) to behave like a layer for Heavy Job/Security class.
 + The Proxy has the same method as Heavy Job/Security class and depends on a condition, the Proxy return the current value or to run the parent's method (injected).
 
-
+## Diagrams
+### Domnikl
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
 ![](kamran-ahmed/diagram.png)
 
  
 ## Sources
-+ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-proxy)
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/Proxy)
++ [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-proxy)

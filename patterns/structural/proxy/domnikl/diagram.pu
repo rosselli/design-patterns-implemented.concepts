@@ -16,7 +16,7 @@
         class BankAccountProxy implements BankAccount {
             - balance
             __construct(BankAccount)
-            + getBalance()
+            + getBalance(): int
         }
     }
 

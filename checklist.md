@@ -48,7 +48,7 @@
 - [x] **_Singleton_** _(2019.05.25)_  
 - [x] **_StaticFactory_** _(2019.06.13)_
 
-## Structural (4/11)
+## Structural (6/11)
 
 - [ ] Adapter
 - [ ] Bridge
@@ -58,8 +58,8 @@
 - [x] **_Dependency Injection_** _(2019.05.25)_ 
 - [ ] Facade
 - [x] **_Fluent Interface_** _(2019.05.25)_  
-- [ ] **_Flyweight_** 
-- [ ] **_Proxy_** 
+- [x] **_Flyweight_** _(2019.06.14)_ 
+- [x] **_Proxy_** _(2019.06.14)_  
 - [x] **_Registry_** _(2019.05.27)_ 
 
 ## More (3)

@@ -15,8 +15,8 @@
     	* door
     	+ __construct(Door)
         + open(): string
-        + close(): string
         + authenticate(): bool
+        + close(): string
     }
 
 	LabDoor -right-> SecuredDoor: " injects"

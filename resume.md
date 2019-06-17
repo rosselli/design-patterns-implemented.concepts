@@ -5,7 +5,7 @@
 + **Command** _(Behavioral)_ <br>It encapsulates the invocation and decouples.<br>**_[client, invoker, command, receiver, undo]_**.
 
 
-**Composite** _(Structural)_ <br> .<br>**_[]_**.
+**Composite** _(Structural)_ <br>a group of objects is to be treated in the same way as a single instance of an object.<br>**_[]_**.
 **Decorator** _(Structural)_ <br> .<br>**_[]_**.
 **Facade** _(Structural)_ <br> .<br>**_[]_**.
 

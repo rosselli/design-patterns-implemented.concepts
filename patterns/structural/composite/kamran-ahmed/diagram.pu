@@ -1,0 +1,43 @@
+@startuml
+    Title <size:20>\nPattern: Composite\n
+
+    package Composite <<Rectangle>> {
+        interface Employee {
+            __construct()
+            + getName(): string
+            + setSalary(): void
+            + getSalary(): float
+            + getRoles(): array
+        }
+
+        class Developer implements Employee {
+			- name: string
+			- salary: float
+			- roles: string
+            __construct()
+            + getName(): string
+            + setSalary(): void
+            + getSalary(): float
+            + getRoles(): array
+        }
+
+        class Designer implements Employee {
+			- name: string
+			- salary: float
+			- roles: string
+            __construct()
+            + getName(): string
+            + setSalary(): void
+            + getSalary(): float
+            + getRoles(): array
+        }
+    }
+
+    class Organization {
+    	- employees
+        + addEmployee(Employee): void
+        + getNetSalaries(): float
+    }
+
+    Employee -left-> Organization: injects
+@enduml

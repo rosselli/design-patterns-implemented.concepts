@@ -1,0 +1,31 @@
+@startuml
+    Title <size:20>\nPattern: Composite\n
+
+    package Composite <<Rectangle>> {
+        interface Renderable {
+            + render(): string
+        }
+
+        class TextElement implements Renderable {
+			- text: string
+            __construct()
+            + render(): string
+        }
+
+        class InputElement implements Renderable {
+            + render(): string
+        }
+
+        class Form implements Renderable {
+            + render(): string
+        }
+    }
+
+    class Render {
+		- elements: array
+        + make(): string
+        + addElement(Renderable): void
+    }
+
+    Renderable -left-> Render: injects
+@enduml

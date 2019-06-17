@@ -1,0 +1,40 @@
+@startuml
+    Title <size:20>\nPattern: Adapter\n
+
+    class Book implements BookInterface {
+        - page: int
+        + open(): void
+        + turnPage(): void
+        + getPage(): int
+    }
+
+    interface BookInterface {
+        + turnPage(): void
+        + open(): void
+        + getPage(): int
+    }
+
+    class Kindle implements EBookInterface {
+        - page: int
+        - totalPages
+        + pressNext(): void
+        + unlock()
+        + getPage(): int
+    }
+
+    class EBookAdapter implements BookInterface {
+        protected $eBook;
+        + __construct(EBookInterface)
+        + open(): void
+        + turnPage(): void
+        + getPage(): int
+    }
+
+    interface EBookInterface {
+        + unlock()
+        + pressNext(): int
+        + getPage(): int
+    }
+
+    EBookInterface -right-> EBookAdapter: injects
+@enduml

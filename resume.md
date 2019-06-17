@@ -5,13 +5,19 @@
 + **Command** _(Behavioral)_ <br>It encapsulates the invocation and decouples.<br>**_[client, invoker, command, receiver, undo]_**.
 
 
+**Bridge** _(Structural)_ <br> .<br>**_[]_**.
+**Composite** _(Structural)_ <br> .<br>**_[]_**.
+**Decorator** _(Structural)_ <br> .<br>**_[]_**.
+**Facade** _(Structural)_ <br> .<br>**_[]_**.
+
+
+
 
 ## Factories
 + **Abstract Factory** _(Creational)_ <br> .<br>**_[]_**
 + **Factory Method** _(Creational)_ <br> .<br>**_[]_**
 + **SimpleFactory** _(Creational)_ <br> .<br>**_[]_**
 + **StaticFactory** _(Creational)_ <br> .<br>**_[]_**
-+ **Builder** _(Creational)_ <br>It creates different flavors of an object while avoiding constructor pollution.<br>**_[fluent interface, factory]_**.
 
 | | OK | Resume
 --- | --- | :---
@@ -53,8 +59,6 @@
 ## Processing
 + **Chain of Responsibility** _(Behavioral)_ <br>It helps building a chain of objects. Request enters from one end and keeps going from object to object till it finds the suitable handler.<br>**_[next, handlers, switch statement]_**
 
-+ **Mediator** _(Behavioral)_ <br>It controls the interaction between two objects. They don't need to have the knowledge of each other's implementation.<br>**_[middleware]_**. 
-
 + **Strategy** _(Behavioral)_ <br>It allows you to switch the algorithm or strategy based upon the situation.<br>**_[filter, by asc-desc, by id-date]_**
 
 + **Specification** _(Behavioral)_ <br>It builds a clear specification of business rules, where objects can be checked against.<br>**_[isSatisfiedBy, and-or-not]_**
@@ -62,6 +66,17 @@
 + **Template Method** _(Behavioral)_ <br>It defines the skeleton of how a certain algorithm could be performed, but defers the implementation of those steps to the children classes.<br>**_[parent-child template, abstract class, builder, fluent interface)_** 
 
 + **Visitor** _(Behavioral)_ <br>It adds further operations to objects without having to modify them *(open/closed principle)*.<br>**_[accept, open/closed, legacy systems]_**. 
+
+
+
+## Middleware
++ **Adapter** _(Structural)_ <br>It creates a layer to wrap an incompatible object in an adapter to make it compatible with another class without modifying their source code.<br>**_[translate, convert, adapter, middleware]_**.
+
++ **Builder** _(Creational)_ <br>It creates different flavors of an object while avoiding constructor pollution.<br>**_[fluent interface, factory, adapter]_**.
+
++ **Mediator** _(Behavioral)_ <br>It controls the interaction between two objects. They don't need to have the knowledge of each other's implementation.<br>**_[middleware]_**. 
+
+
 
 
 ## State Changing

@@ -1,0 +1,32 @@
+@startuml
+    Title <size:20>\nPattern: Adapter\n
+
+    interface Lion {
+        + roar(): string
+    }
+
+    class AfricanLion implements Lion {
+        + roar(): string
+    }
+
+    class AsianLion implements Lion {
+        + roar(): string
+    }
+
+    class Hunter {
+        + hunt(Lion)
+    }
+
+    class WildDog {
+        + bark(): string
+    }
+
+    class WildDogAdapter implements Lion {
+        * dog;
+        + __construct(WildDog)
+        + roar()
+    }
+
+    Lion -right-> Hunter: injects
+    WildDog -left-> WildDogAdapter: injects
+@enduml

@@ -48,9 +48,9 @@
 - [x] **_Singleton_** _(2019.05.25)_  
 - [x] **_StaticFactory_** _(2019.06.13)_
 
-## Structural (6/11)
+## Structural (7/11)
 
-- [ ] Adapter
+- [x] **_Adapter_** _(2019.06.17)_
 - [ ] Bridge
 - [ ] Composite
 - [x] **_DataMapper_** _(2019.05.27)_ 

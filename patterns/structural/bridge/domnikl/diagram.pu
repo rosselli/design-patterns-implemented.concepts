@@ -1,0 +1,31 @@
+@startuml
+    Title <size:20>\nPattern: Bridge\n
+
+    interface Formatter {
+        + format(): string
+
+    class HtmlFormatter implements Formatter {
+        + format(): string
+    }
+
+    class PlainTextFormatter implements Formatter {
+        + format(): string
+    }
+
+    abstract class Service {
+        * implementation
+        + __construct(Formatter)
+        + setImplementation(Formatter): void
+        + {abstract} get(): string
+    }
+
+    class HelloWorldService extends Service {
+        + get(): string
+    }
+
+    class PingService extends Service {
+        + get(): string
+    }
+
+    Formatter --> Service
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+    Title <size:20>\nPattern: Bridge\n
+
+    interface WebPage {
+        + __construct(Theme $theme);
+        + getContent(): string;
+    }
+
+    class About implements WebPage {
+        * $theme;
+        + __construct(Theme)
+        + getContent(): string
+    }
+
+    class Careers implements WebPage {
+        * $theme;
+        + __construct(Theme)
+        + getContent(): string
+    }
+
+    interface Theme {
+        + getColor(): string;
+    }
+
+    class DarkTheme implements Theme {
+        + getColor(): string
+    }
+
+    class LightTheme implements Theme {
+        + getColor(): string
+    }
+
+    class AquaTheme implements Theme {
+        + getColor(): string
+    }
+
+    Theme -left-> WebPage: injects
+@enduml

@@ -5,7 +5,6 @@
 + **Command** _(Behavioral)_ <br>It encapsulates the invocation and decouples.<br>**_[client, invoker, command, receiver, undo]_**.
 
 
-**Bridge** _(Structural)_ <br> .<br>**_[]_**.
 **Composite** _(Structural)_ <br> .<br>**_[]_**.
 **Decorator** _(Structural)_ <br> .<br>**_[]_**.
 **Facade** _(Structural)_ <br> .<br>**_[]_**.
@@ -113,6 +112,8 @@
 + **Iterator** _(Behavioral)_ <br>It creates an **object iterable** and to make it appear **like a collection of objects**.<br>**_[collection, foreach]_**.
 
 + **NullObject** _(Behavioral)_ <br>It returns objects that won't never be null, eliminating the conditional is_null() check.<br>**_[is_null, never]_**
+
++ **Bridge** _(Structural)_ <br> The implementation details are pushed to another object with a separate hierarchy. It is about composition over inheritance.<br>**_[composition, content injection, service]_**.
 
 
 

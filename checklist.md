@@ -51,7 +51,7 @@
 ## Structural (7/11)
 
 - [x] **_Adapter_** _(2019.06.17)_
-- [ ] Bridge
+- [x] **_Bridge_** _(2019.06.17)_
 - [ ] Composite
 - [x] **_DataMapper_** _(2019.05.27)_ 
 - [ ] Decorator

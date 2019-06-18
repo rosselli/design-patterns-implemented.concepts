@@ -1,0 +1,26 @@
+@startuml
+    Title <size:20>\nPattern: Facade\n
+
+    package Facade <<Rectangle>> {
+        class ComputerFacade {
+            __construct(BiosInterface, OsInterface)
+            turnOn()
+            turnOff()
+        }
+    }
+
+    interface BiosInterface {
+        execute()
+        waitForKeyPress()
+        launch()
+        powerDown()
+    }
+
+    interface OsInterface {
+        halt()
+        getName()
+    }
+
+    BiosInterface --> ComputerFacade: injects
+    OsInterface --> ComputerFacade: injects
+@enduml

@@ -58,8 +58,12 @@ $stationList->removeStation(new RadioStation(89)); // Will remove station 89
 + Create a class 
 
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
-<!-- ![](kamran-ahmed/diagram.png) -->
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 # Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-iterator)

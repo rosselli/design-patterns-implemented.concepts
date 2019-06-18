@@ -1,0 +1,42 @@
+@startuml
+    Title <size:20>\nPattern: Decorator\n
+
+    interface Booking {
+        + calculatePrice(): int
+        + getDescription(): string
+    }
+
+    class SingleRoomBooking implements Booking {
+        + calculatePrice(): int
+        + getDescription(): string
+    }
+
+    class DoubleRoomBooking implements Booking {
+        + calculatePrice(): int
+        + getDescription(): string
+    }
+
+    package Decorator <<Rectangle>> {
+        abstract BookingDecorator implements Booking {
+            * booking
+            __construct(Booking)
+        }
+
+        class ExtraBed extends BookingDecorator {
+        	- PRICE
+            + calculatePrice(): int
+            + getDescription(): string
+        }
+
+        class WiFi extends BookingDecorator {
+        	- PRICE
+            + calculatePrice(): int
+            + getDescription(): string
+        }
+    }
+@enduml
+
+
+
+
+

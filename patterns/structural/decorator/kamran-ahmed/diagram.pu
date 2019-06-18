@@ -1,0 +1,40 @@
+@startuml
+    Title <size:20>\nPattern: Decorator\n
+
+    interface Coffee {
+        + getCost(): int
+        + getDescription(): string
+    }
+
+    class SimpleCoffee implements Coffee {
+        + getCost(): int
+        + getDescription(): string
+    }
+
+    class MilkCoffee implements Coffee {
+        - coffee
+        __construct(Coffee)
+        + getCost(): int
+        + getDescription(): string
+    }
+
+    class WhipCoffee implements Coffee {
+        - coffee
+        __construct(Coffee)
+        + getCost(): int
+        + getDescription(): string
+    }
+
+    class VanillaCoffee implements Coffee {
+        - coffee
+        __construct(Coffee)
+        + getCost(): int
+        + getDescription(): string
+    }
+
+@enduml
+
+
+
+
+

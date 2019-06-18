@@ -52,11 +52,11 @@
 
 - [x] **_Adapter_** _(2019.06.17)_
 - [x] **_Bridge_** _(2019.06.17)_
-- [ ] Composite
+- [x] **_Composite_** _(2019.06.18)_
 - [x] **_DataMapper_** _(2019.05.27)_ 
-- [ ] Decorator
+- [x] **_Decorator_** _(2019.06.18)_
 - [x] **_Dependency Injection_** _(2019.05.25)_ 
-- [ ] Facade
+- [x] **_Facade_** _(2019.06.18)_
 - [x] **_Fluent Interface_** _(2019.05.25)_  
 - [x] **_Flyweight_** _(2019.06.14)_ 
 - [x] **_Proxy_** _(2019.06.14)_  

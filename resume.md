@@ -5,9 +5,11 @@
 + **Command** _(Behavioral)_ <br>It encapsulates the invocation and decouples.<br>**_[client, invoker, command, receiver, undo]_**.
 
 
-**Composite** _(Structural)_ <br>a group of objects is to be treated in the same way as a single instance of an object.<br>**_[]_**.
-**Decorator** _(Structural)_ <br> .<br>**_[]_**.
-**Facade** _(Structural)_ <br> .<br>**_[]_**.
++ **Composite** _(Structural)_ <br>A group of objects is to be treated in the same way as a single instance of an object.<br>**_[]_**.
+
++ **Decorator** _(Structural)_ <br> It allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class.<br>**_[single responsibility]_**.
+
++ **Facade** _(Structural)_ <br> .<br>**_[]_**.
 
 
 

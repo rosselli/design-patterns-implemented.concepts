@@ -23,7 +23,10 @@
 + You don't have to check if the logger is set with is_null(), instead just use it.
 
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/NullObject)

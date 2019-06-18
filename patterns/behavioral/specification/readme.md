@@ -10,7 +10,11 @@
   the given object satisfies the specification.
 + Create the Item class that will be injects in every isSatisfiedBy() method.
 
+
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/Specification)

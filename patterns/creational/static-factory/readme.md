@@ -14,7 +14,10 @@
 + Create a class 
 
  
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/StaticFactory)

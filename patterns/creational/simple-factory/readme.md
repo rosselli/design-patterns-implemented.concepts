@@ -24,9 +24,13 @@
 + Create a class 
 -->
 
-
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
 ![](kamran-ahmed/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/SimpleFactory)

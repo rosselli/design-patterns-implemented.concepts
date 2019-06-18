@@ -71,14 +71,18 @@ When to use?
 
 When there are interrelated dependencies with not-that-simple creation logic involved
 
--->  
 
 ## Recipe
 + Create a class 
+-->  
 
 
-![](kamran-ahmed/diagram.png)
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-abstract-factory)

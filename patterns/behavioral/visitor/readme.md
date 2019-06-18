@@ -23,8 +23,12 @@ It is one way to follow the **open/closed principle**.
 + For each RoleVisitor: create a class that implements RoleVisitorInterface.
 
 
-![](kamran-ahmed/diagram.png)
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-visitor)

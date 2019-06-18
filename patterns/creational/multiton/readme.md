@@ -8,7 +8,11 @@
     + 2 DB Connectors, e.g. one for MySQL, the other for SQLite
     + Multiple Loggers (one for debug messages, one for errors)
 
+
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Recipe
 + The same as Singleton but the house the instance is **static array**, not a regular variable.

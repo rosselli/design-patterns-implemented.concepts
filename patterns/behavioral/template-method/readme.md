@@ -37,8 +37,12 @@ And then it can be used as
 + Create a class 
 -->
 
-![](kamran-ahmed/diagram.png)
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-template-method)

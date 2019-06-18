@@ -19,7 +19,10 @@ _Object pooling can offer a significant performance boost in situations where th
 + spl_object_hash() is used to get the key of the arrays.
 
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Pool)

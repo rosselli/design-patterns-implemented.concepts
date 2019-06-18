@@ -17,7 +17,10 @@ _The key point of this pattern is, unlike Active Record pattern, the data model 
 + Create a Mapper that receive a Storage object in constructor.
 + The Mapper returns an object from Data class.
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/DataMapper)

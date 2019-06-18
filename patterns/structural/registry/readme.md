@@ -11,7 +11,10 @@
 + Create 2 static methods (Set and Get) to manage the $storedValues properties. 
 
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP)

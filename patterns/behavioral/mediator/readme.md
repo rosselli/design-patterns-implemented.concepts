@@ -26,8 +26,15 @@
 ## Recipe
 + Create a class 
 -->
-![](kamran-ahmed/diagram.png)
+
+
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
+
 
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-mediator)

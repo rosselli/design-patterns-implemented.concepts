@@ -26,10 +26,13 @@
 + Every command method has to call notify() to inform the change.
 + Every change notified the subject is updated (cloned and returned).
 
-![](kamran-ahmed/diagram.png)
+
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
 
-
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/Observer)

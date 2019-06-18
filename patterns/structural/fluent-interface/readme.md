@@ -13,7 +13,10 @@
 + At this point, the chaining is already implemented.
 + Implement the method __toString() and return the text, joining the elements of the arrays using sprintf().
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/FluentInterface)

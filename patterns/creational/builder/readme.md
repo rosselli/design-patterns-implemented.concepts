@@ -37,8 +37,12 @@ public function __construct($size, $cheese = true, $pepperoni = true, $tomato = 
 + Create a class 
 -->
 
-![](kamran-ahmed/diagram.png)
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 
 ## Sources

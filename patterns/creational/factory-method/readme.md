@@ -40,8 +40,12 @@ Useful when there is some generic processing in a class but the required sub-cla
 + Create a class 
 -->
 
-![](kamran-ahmed/diagram.png)
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
+### Kamran Ahmed
+![](kamran-ahmed/diagram.png)
 
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-factory-method)

@@ -22,7 +22,10 @@ handle all calls**.
 + Logger _(may also be a Multiton if there are many log files for several purposes)_.
 + Lock file for the application _(there is only one in the filesystem)_.
 
+## Diagrams
+### Dominik Liebler
 ![](domnikl/diagram.png)
+
 
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans#-singleton)

@@ -1,27 +1,20 @@
 # Design Patterns: CheckLists
 
+## Behavioral (12)
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
-**Behavioral:** Command | done | done | done | done | done
-**Behavioral:** Mediator | done |  | done | done | done
-**Behavioral:** Memento | done | | done | done | done
-**Behavioral:** NullObject | done | done | done | done | done
-**Behavioral:** Observer | done | done | done | done | done 
-**Behavioral:** Specification | done | done | done | done | done 
-**Behavioral:** State | done |  | done | done | done 
-**Behavioral:** Strategy | done |  | done | done | done 
-**Behavioral:** Visitor | done | done | done | done | done 
-**Creational:** Multiton | done | done | done | done | done
-**Creational:** Pool | done | done | done | done | done 
-**Creational:** Singleton | done | done | done | done | done
-**Structural:** DataMapper | done | done | done | done | done 
-**Structural:** Dependency Injection | done | done | done | done | done 
-**Structural:** Fluent Interface | done | done | done | done | done
-**Structural:** Flyweight | done | done | done | done | done
-**Structural:** Proxy | done | done | done | done | done 
-**Structural:** Registry | done | done | done | done | done
-
-## Behavioral (11)
+**Chain of Responsibility** |  |  |  |  | 
+**Command** |  |  |  |  | 
+**Iterator** |  |  |  |  | 
+**Mediator** |  |  |  |  | 
+**Memento** |  | |  |  | 
+**NullObject** |  |  |  |  | 
+**Observer** |  |  |  |  | 
+**Specification** |  |  |  |  | 
+**State** |  |  |  |  | 
+**Strategy** |  |  |  |  |  
+**TemplateMethod** |  |  |  |  | 
+**Visitor** |  |  |  |  | 
 
 - [x] **_Chain of Responsibility_** _(2019.06.11)_
 - [x] **_Command_** _(2019.06.05)_
@@ -37,18 +30,44 @@
 - [x] **_Visitor_** _(2019.06.04)_ 
 
 ## Creational (9)
+| | Note | Recipe | Diagram | Code | Test
+--- | :---:| :---:| :---: | :---:| :---:|
+**Abstract Factory** | | | done | done | done
+**Factory Method** | | | done | done | done
+**Simple Factory** | | | done | done | done
+**Static Factory** | | |  | done | done
+**Builder** | done |  | done | done | done
+**Pool** | done | done | done | done | done 
+**Prototype** | done | done | done | done | done
+**Singleton** | done | done | done | done | done
+**Multiton** | done | done | done | done | done
 
-- [x] **_Abstract Factory_** _(2019.06.13)_
-- [x] **_Builder_** _(2019.06.14)_ 
-- [x] **_Factory Method_** _(2019.06.13)_
-- [x] **_Multiton_** _(2019.05.25)_ 
+
+- [ ] **_Abstract Factory_**
+- [ ] **_Factory Method_**
+- [ ] **_SimpleFactory_**
+- [ ] **_StaticFactory_**
+- [ ] **_Builder_**  
 - [x] **_Pool_** _(2019.06.14)_ 
 - [x] **_Prototype_** _(2019.06.13)_
-- [x] **_SimpleFactory_** _(2019.06.13)_
 - [x] **_Singleton_** _(2019.05.25)_  
-- [x] **_StaticFactory_** _(2019.06.13)_
+- [x] **_Multiton_** _(2019.05.25)_ 
 
 ## Structural (7/11)
+| | Note | Recipe | Diagram | Code | Test
+--- | :---:| :---:| :---: | :---:| :---:|
+**Adapter** | | | | 
+**Bridge** | | | | 
+**Composite** | | | | 
+**DataMapper** | | | | 
+**Decorator** | | | | 
+**Dependency Injection** | | | | 
+**Facade** | | | | 
+**Fluent Interface** | | | | 
+**Flyweight** | | | | 
+**Proxy** | | | | 
+**Registry** | | | | 
+
 
 - [x] **_Adapter_** _(2019.06.17)_
 - [x] **_Bridge_** _(2019.06.17)_
@@ -63,11 +82,15 @@
 - [x] **_Registry_** _(2019.05.27)_ 
 
 ## More (3)
+| | Note | Recipe | Diagram | Code | Test
+--- | :---:| :---:| :---: | :---:| :---:|
+**Entity-Attribute-Value (EAV)** | | | | 
+**Repository** | | | | 
+**Service Locator** | | | | 
 
-- [ ] Delegation
-- [ ] Service Locator
-- [ ] Repository
 - [ ] Entity-Attribute-Value (EAV)
+- [ ] Repository
+- [ ] Service Locator
 
 
 

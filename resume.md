@@ -1,20 +1,55 @@
 # Design Patterns: Resume
 
 ## Categories
-+ Factories
+1. Factories
+1. Global State
+1. High Cost Objects
+1. Middleware
 
 
 
-
-
-
-
+<!-- <br> .<br>**_[]_** -->
 ## Factories
-+ **Abstract Factory** _(Creational)_ <br> .<br>**_[]_**
-+ **Factory Method** _(Creational)_ <br> .<br>**_[]_**
-+ **SimpleFactory** _(Creational)_ <br> .<br>**_[]_**
-+ **StaticFactory** _(Creational)_ <br> .<br>**_[]_**
+1. **Abstract Factory** _(Creational)_ 
+1. **Factory Method** _(Creational)_ 
+1. **Simple Factory** _(Creational)_ 
+1. **Static Factory** _(Creational)_ 
 
+## Global State
++ **Singleton** _(Creational)_ <br>It has only one instance of this object in the application that will handle all calls.<br>**_[the president, the only one]_**
+
++ **Multiton** _(Creational)_ <br>It has a list of named instances that are used, like a singleton but with N instances.<br>**_[the multiple ones]_**
+
+## High Cost Objects
+1. **Pool** _(Creational)_ <br>It uses a set of initialized objects keep them ready to use _(in a Pool)_, rather than allocating and destroying them on demand.<br>**_[pool, recycle, "get and dispose", "free and occupied", "create, receive, keep, deliver back and don't destroy"]_** 
+
+1. **Prototype** _(Creational)_ <br>Create object based on an existing object through cloning.<br>**_[clone]_**.
+
+
+## Middleware
+1. **Builder** _(Creational)_ <br>It creates different flavors of an object while avoiding constructor pollution.<br>**_[fluent interface, factory, adapter]_**.
+
+
+<!-- 
+
++ [DK] [Command](patterns/behavioral/command) _(The Waitress)_
++ [D] [NullObject](patterns/behavioral/nullobject) _(Never Null)_
++ [DK] [Observer](patterns/behavioral/observer) _(Notifier)_
++ [D] [Specification](patterns/behavioral/specification) _(AndOrNor)_
++ [DK] [Visitor](patterns/behavioral/visitor) _()_
+
++ [D] [DataMapper](patterns/structural/data-mapper) _(The Mapper)_
++ [D] [Dependency Injection](patterns/structural/dependency-injection) _(The Injector)_
++ [D] [Fluent Interface](patterns/structural/fluentinterface) _(Chain Caller)_ 
++ [DK] [Flyweight](patterns/structural/flyweight) _(Object Sharer)_
++ [DK] [Proxy](patterns/structural/proxy) _(Door Keeper)._
++ [D] [Registry](patterns/structural/registry) _(Global State Logger). Anti-pattern, use DI._
+
+-->
+
+
+
+<!--
 ## Processing
 + **Chain of Responsibility** _(Behavioral)_ <br>It helps building a chain of objects. Request enters from one end and keeps going from object to object till it finds the suitable handler.<br>**_[next, handlers, switch statement]_**
 
@@ -31,7 +66,6 @@
 ## Middleware
 + **Adapter** _(Structural)_ <br>It creates a layer to wrap an incompatible object in an adapter to make it compatible with another class without modifying their source code.<br>**_[translate, convert, adapter, middleware]_**.
 
-+ **Builder** _(Creational)_ <br>It creates different flavors of an object while avoiding constructor pollution.<br>**_[fluent interface, factory, adapter]_**.
 
 + **Mediator** _(Behavioral)_ <br>It controls the interaction between two objects. They don't need to have the knowledge of each other's implementation.<br>**_[middleware]_**. 
 
@@ -49,19 +83,12 @@
 ## High Cost Objects
 + **Flyweight** _(Structural)_ <br>It shares similar objects as much as possible to minimise memory usage.<br>**_[pool, cache, share, "returning existing objects or creating new ones"]_**
 
-+ **Pool** _(Creational)_ <br>It uses a set of initialized objects kept ready to use (A Pool), rather than allocating and destroying them on demand.<br>**_[pool, recycle, "get and dispose", "free and occupied", "create, receive, keep, deliver back and don't destroy"]_** 
-
-+ **Prototype** _(Creational)_ <br>Create object based on an existing object through cloning.<br>**_[clone]_**.
-
 + **Proxy** _(Structural)_ <br>It avoids the instance to execute again the heavy job, already executed by the parent or it is a security layer who opens the door to the functionality.<br>**_[security, heavy job, "execute method from another class"]_** 
 
 
 ## Global State
 + **Registry** _(Structural)_ <br>It implements a central storage for objects often used throughout the application.<br>**_[]_**
 
-+ **Singleton** _(Creational)_ <br>It has only one instance of this object in the application that will handle all calls.<br>**_[]_**
-
-+ **Multiton** _(Creational)_ <br>It has a list of named instances that are used, like a singleton but with N instances.<br>**_[]_**
 
 
 ## Miscellaneous
@@ -109,19 +136,13 @@
 **Behavioral:** Strategy | OK | It allows you to switch the algorithm or strategy based upon the situation.<br>**_[filter, by asc-desc, by id-date]_**.  
 **Behavioral:** Template Method | OK | It defines the skeleton of how a certain algorithm could be performed, but defers the implementation of those steps to the children classes.<br>**_[parent-child template, abstract class, builder, fluent interface)_**. 
 **Behavioral:** Visitor | | It adds further operations to objects without having to modify them *(open/closed principle)*.<br>**_[accept, open/closed, legacy systems]_**. 
-**Creational:** Multiton | OK | It has a list of named instances that are used, like a singleton but with N instances.<br>**_[]_**.
-**Creational:** Pool | | It uses a set of initialized objects kept ready to use (A Pool), rather than allocating and destroying them on demand.<br>**_[]_**. 
-**Creational:** Prototype | | Create object based on an existing object through cloning.<br>**_[clone]_**.
-**Creational:** Singleton | OK | It has only one instance of this object in the application that will handle all calls.<br>**_[]_**.
+
 **Structural:** DataMapper | | It performs bidirectional transfer of data between a persistent data store and an in memory data representation.<br>**_[]_**.
 **Structural:** Dependency Injection | OK | It injects an object inside another object, *(normally via constructor)*, reducing the coupling and the need to extend it.<br>**_[constructor, injection]_**. 
 **Structural:** Fluent Interface | OK | To write code that is easy readable just like sentences in a natural language (like English).<br>**_[chained methods, eloquent, return this]_**.
 **Structural:** Flyweight | | It shares similar objects as much as possible to minimise memory usage.<br>**_[]_**.
 **Structural:** Proxy | OK | It avoids the instance to execute again the heavy job, already executed by the parent or it is a security layer who opens the door to the functionality.<br>**_[]_**. 
 **Structural:** Registry | | It implements a central storage for objects often used throughout the application.<br>**_[]_**.
-
-
-
-
+-->
 
 

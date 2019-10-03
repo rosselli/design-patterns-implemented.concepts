@@ -4,6 +4,8 @@ Design patterns are **solutions to recurring problems**, guidelines on how to ta
 
 This project is based on repositories of [Dominik Liebler](https://github.com/domnikl/DesignPatternsPHP) and [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans)
 
+I created my own categorization
+
 ## Patterns: Behavioral (12)
 + Create the **communication between the objects**. 
 + What makes them **different from structural patterns** is they don't just specify the structure but also **outline the patterns for message passing/communication between them**. 
@@ -15,7 +17,7 @@ This project is based on repositories of [Dominik Liebler](https://github.com/do
 1. [DK] [Iterator](patterns/behavioral/iterator) 
 1. [DK] [Mediator](patterns/behavioral/mediator) 
 1. [DK] [Memento](patterns/behavioral/memento) 
-1. [D] [NullObject](patterns/behavioral/nullobject)
+1. [D] [NullObject](patterns/behavioral/null-object)
 1. [DK] [Observer](patterns/behavioral/observer)
 1. [D] [Specification](patterns/behavioral/specification)
 1. [DK] [State](patterns/behavioral/state) 
@@ -56,6 +58,6 @@ Focused towards **how to instantiate an object** or group of related objects.
 1. [D] [Registry](patterns/structural/registry)
 
 ## Patterns: More (3)
-1. [D] [EAV]()
-1. [D] [Repository]()
-1. [D] [ServiceLocator]()
+1. [D] [EAV](patterns/more/eav)
+1. [D] [Repository](patterns/more/repository)
+1. [D] [ServiceLocator](patterns/more/service-locator)

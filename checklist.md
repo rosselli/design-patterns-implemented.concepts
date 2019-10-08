@@ -53,29 +53,29 @@
 - [x] **_Singleton_** _(2019.05.25)_  
 - [x] **_Multiton_** _(2019.05.25)_ 
 
-## Structural (7/11)
+## Structural (6/11)
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
-**Adapter** | | | | 
-**Bridge** | | | | 
-**Composite** | | | | 
-**DataMapper** | | | | 
-**Decorator** | | | | 
-**Dependency Injection** | | | | 
-**Facade** | | | | 
-**Fluent Interface** | | | | 
-**Flyweight** | | | | 
-**Proxy** | | | | 
-**Registry** | | | | 
+**Adapter** | done |  | done | done | done 
+**Bridge** | done |  | done | done | done 
+**Composite** | done |  | done | done | done
+**DataMapper** | done | done | done | done | done 
+**Decorator** | done |  | done | done | done 
+**Dependency Injection** | done | done | done | done | done 
+**Facade** | done |  | done | done | done 
+**Fluent Interface** | done | done | done | done | done 
+**Flyweight** | done | done | done | done | done 
+**Proxy** | done | done | done | done | done 
+**Registry** | done | done | done | done | done 
 
 
-- [x] **_Adapter_** _(2019.06.17)_
-- [x] **_Bridge_** _(2019.06.17)_
-- [x] **_Composite_** _(2019.06.18)_
+- [ ] **_Adapter_**
+- [ ] **_Bridge_**
+- [ ] **_Composite_**
 - [x] **_DataMapper_** _(2019.05.27)_ 
-- [x] **_Decorator_** _(2019.06.18)_
+- [ ] **_Decorator_**
 - [x] **_Dependency Injection_** _(2019.05.25)_ 
-- [x] **_Facade_** _(2019.06.18)_
+- [ ] **_Facade_** 
 - [x] **_Fluent Interface_** _(2019.05.25)_  
 - [x] **_Flyweight_** _(2019.06.14)_ 
 - [x] **_Proxy_** _(2019.06.14)_  

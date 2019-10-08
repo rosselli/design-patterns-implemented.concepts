@@ -27,4 +27,3 @@
 ## Sources
 + [Kamran Ahmed](https://github.com/kamranahmedse/design-patterns-for-humans)
 + [Domnikl](https://github.com/domnikl/DesignPatternsPHP)
-+ [Wiki](http://en.wikipedia.org/wiki/Facade_pattern)

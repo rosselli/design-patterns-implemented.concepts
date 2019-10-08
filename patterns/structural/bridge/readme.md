@@ -8,7 +8,7 @@
 
 + Examples
 	+ Symfony
-	+ DoctrineBridge <https://github.com/symfony/DoctrineBridge>`__
+	+ [DoctrineBridge](https://github.com/symfony/DoctrineBridge)
 
 + Consider you have a website with different pages and you are supposed to allow the user to change the theme. 
 	+ What would you do? 

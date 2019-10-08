@@ -8,7 +8,7 @@
 
 + Imagine you run a car service shop offering multiple services. 
 	+ Now how do you calculate the bill to be charged if you are offering multiple services? 
-	+ You **pick one service and dynamically keep adding to it the prices for the provided services** till you get the final cost.**
+	+ You pick one service and dynamically keep adding to it the prices for the provided services till you get the final cost.
 	+ Here each type of service is a decorator**.
 
 <!-- 

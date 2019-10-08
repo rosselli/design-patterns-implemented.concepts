@@ -34,10 +34,10 @@ A facade is an object that provides a simplified interface to a larger body of c
 Programmatic Example
 
 Taking our computer example from above. Here we have the computer class
---> 
+
 ## Recipe
 + Create a class 
-
+--> 
 
 
 ## Diagrams

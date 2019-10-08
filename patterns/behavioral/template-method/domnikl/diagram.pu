@@ -10,7 +10,7 @@
         * enjoyVacation()
     }
 
-    {abstract} Journey {
+    abstract class Journey {
         - thingsToDo: array
         + takeATrip()
         * {abstract} enjoyVacation()
@@ -20,5 +20,4 @@
         + getThingsToDo()
     }
     note left: final takeATrip()
-
 @enduml

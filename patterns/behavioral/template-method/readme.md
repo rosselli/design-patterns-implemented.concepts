@@ -27,7 +27,6 @@ Imagine we have a build tool that helps us test, lint, build, generate build rep
 
 First of all we have our base class that specifies the skeleton for the build algorithm
 
-
 Then we can have our implementations
 
 And then it can be used as

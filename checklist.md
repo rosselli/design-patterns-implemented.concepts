@@ -1,35 +1,35 @@
 # Design Patterns: CheckLists
 
-## Behavioral (12)
+## Behavioral (5/12)
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
-**Chain of Responsibility** |  |  |  |  | 
-**Command** |  |  |  |  | 
-**Iterator** |  |  |  |  | 
-**Mediator** |  |  |  |  | 
-**Memento** |  | |  |  | 
-**NullObject** |  |  |  |  | 
-**Observer** |  |  |  |  | 
-**Specification** |  |  |  |  | 
-**State** |  |  |  |  | 
-**Strategy** |  |  |  |  |  
-**TemplateMethod** |  |  |  |  | 
-**Visitor** |  |  |  |  | 
+**Chain of Responsibility** | done |  | done | done | done 
+**Command** | done | done | done | done | done 
+**Iterator** | done |  | done | done | done 
+**Mediator** | done |  | done | done | done 
+**Memento** | done |  | done | done | done 
+**NullObject** | done | done | done | done | done 
+**Observer** | done | done | done | done | done 
+**Specification** | done | done | done | done | done 
+**State** | done |  | done | done | done 
+**Strategy** | done |  | done | done | done  
+**TemplateMethod** | done |  | done | done | done 
+**Visitor** | done | done | done | done | done 
 
-- [x] **_Chain of Responsibility_** _(2019.06.11)_
+- [ ] **_Chain of Responsibility_**
 - [x] **_Command_** _(2019.06.05)_
-- [x] **_Iterator_** _(2019.06.11)_
-- [x] **_Mediator_** _(2019.06.05)_
-- [x] **_Memento_** _(2019.06.05)_
+- [ ] **_Iterator_** 
+- [ ] **_Mediator_**
+- [ ] **_Memento_**
 - [x] **_NullObject_** _(2019.05.25)_ 
 - [x] **_Observer_** _(2019.06.08)_ 
 - [x] **_Specification_** _(2019.05.25)_  
-- [x] **_State_** _(2019.06.07)_
-- [x] **_Strategy_** _(2019.06.08)_
-- [x] **_TemplateMethod_** _(2019.06.11)_
+- [ ] **_State_** 
+- [ ] **_Strategy_** 
+- [ ] **_TemplateMethod_** 
 - [x] **_Visitor_** _(2019.06.04)_ 
 
-## Creational (9)
+## Creational (4/9)
 | | Note | Recipe | Diagram | Code | Test
 --- | :---:| :---:| :---: | :---:| :---:|
 **Abstract Factory** | | | done | done | done
